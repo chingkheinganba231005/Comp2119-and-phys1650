@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Study Guides</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161e2b'/%3E%3Ccircle cx='11' cy='12' r='3.2' fill='%23ffa24d'/%3E%3Ccircle cx='22' cy='12' r='3.2' fill='%238c9bff'/%3E%3Cpath d='M11 15v4m11-4v4M11 19h11' stroke='%23fff' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f4f5f8; --surface:#ffffff; --ink:#161e2b; --muted:#566074; --line:#d5dae4;
+  --comp:#c2410c; --comp-soft:#fdeee6; --comp-art:#eef3ef; --comp-grid:rgba(23,35,45,.07);
+  --phys:#3f4fd8; --phys-soft:#e8eaff;
+  --shadow:0 2px 4px rgba(22,30,43,.06),0 10px 26px rgba(22,30,43,.09);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --disp:'Bricolage Grotesque','Trebuchet MS',system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0e1319; --surface:#161d26; --ink:#e8edf3; --muted:#9aa7b6; --line:#2a3441;
+  --comp:#ffa24d; --comp-soft:#3a2614; --comp-art:#10171c; --comp-grid:rgba(230,237,242,.06);
+  --phys:#8c9bff; --phys-soft:#232d63;
+  --shadow:0 2px 4px rgba(0,0,0,.4),0 10px 26px rgba(0,0,0,.4);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 16px/1.6 var(--sans); -webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-top:max(0px,env(safe-area-inset-top,0px));
+  padding-bottom:max(0px,env(safe-area-inset-bottom,0px));
+}
+.wrap{max-width:980px;margin:0 auto;padding-block:28px 56px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--comp);outline-offset:3px;border-radius:6px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.eyebrow{margin:0;font:600 .78rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.theme{font:600 .85rem var(--sans);padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer;min-height:36px}
+.theme:hover{border-color:var(--muted)}
+
+h1{margin:34px 0 10px;font:700 clamp(2.3rem,6.4vw,3.8rem)/1.05 var(--serif);letter-spacing:-.015em;text-wrap:balance}
+.lede{margin:0 0 34px;max-width:36em;font-size:1.1rem;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:22px;margin:0;padding:0;list-style:none}
+.grid>li{min-width:0}
+.card{
+  display:flex;flex-direction:column;height:100%;overflow:hidden;min-width:0;
+  background:var(--surface);border:1.5px solid var(--line);border-top:5px solid var(--acc);border-radius:12px;
+  color:var(--ink);text-decoration:none;transition:transform .16s ease,box-shadow .16s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card.comp{--acc:var(--comp);--acc-soft:var(--comp-soft)}
+.card.phys{--acc:var(--phys);--acc-soft:var(--phys-soft)}
+.art{border-bottom:1.5px solid var(--line);padding:14px 18px}
+.art svg{display:block;width:100%;height:auto;max-height:128px}
+.art.comp{background-color:var(--comp-art);background-image:linear-gradient(var(--comp-grid) 1px,transparent 1px),linear-gradient(90deg,var(--comp-grid) 1px,transparent 1px);background-size:22px 22px;color:var(--ink)}
+.art.phys{background:#0f1740;color:#e8ebfa}
+.body{display:flex;flex-direction:column;gap:12px;padding:20px 22px 22px;flex:1}
+.tag{align-self:flex-start;font:600 .74rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);background:var(--acc-soft);padding:6px 10px;border-radius:5px}
+.card h2{margin:0;font-size:1.85rem;line-height:1.12;text-wrap:balance}
+.card.comp h2{font-family:var(--disp);font-weight:800;letter-spacing:-.01em}
+.card.phys h2{font-family:var(--serif);font-weight:700;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 8px;margin:2px 0 0;padding:0;list-style:none}
+.facts li{font:500 .8rem/1.2 var(--sans);padding:5px 10px;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);background:var(--bg)}
+.go{margin-top:auto;padding-top:8px;font-weight:600;color:var(--acc)}
+.go span{display:inline-block;transition:transform .16s ease}
+.card:hover .go span{transform:translateX(4px)}
+
+.foot{margin:34px 0 0;padding-top:16px;border-top:1.5px solid var(--line);color:var(--muted);font-size:.88rem}
+@media (prefers-reduced-motion:reduce){.card,.go span{transition:none}.card:hover{transform:none}.card:hover .go span{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <p class="eyebrow">Interactive study guides</p>
+    <button class="theme" id="themeBtn" type="button">Dark</button>
+  </div>
+
+  <h1>Pick a course</h1>
+  <p class="lede">Visual, step-by-step explanations with animations and practice questions. Each guide is a self-contained page that opens in the same tab.</p>
+
+  <ul class="grid">
+    <li>
+      <a class="card comp" href="comp2119/">
+        <div class="art comp" aria-hidden="true">
+          <svg viewBox="0 0 240 104" role="presentation">
+            <g stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" fill="none">
+              <line x1="120" y1="16" x2="64" y2="50"/><line x1="64" y1="50" x2="36" y2="88"/><line x1="64" y1="50" x2="92" y2="88"/><line x1="176" y1="50" x2="204" y2="88"/>
+            </g>
+            <g stroke="var(--comp)" stroke-width="3" fill="none"><line x1="120" y1="16" x2="176" y2="50"/><line x1="176" y1="50" x2="148" y2="88"/></g>
+            <g stroke="currentColor" stroke-width="1.6" fill="var(--surface)">
+              <circle cx="64" cy="50" r="12"/><circle cx="36" cy="88" r="12"/><circle cx="92" cy="88" r="12"/><circle cx="204" cy="88" r="12"/>
+            </g>
+            <g stroke="var(--comp)" stroke-width="2.6" fill="var(--comp-soft)">
+              <circle cx="120" cy="16" r="12"/><circle cx="176" cy="50" r="12"/><circle cx="148" cy="88" r="12"/>
+            </g>
+            <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="700" text-anchor="middle" fill="currentColor">
+              <text x="120" y="20">8</text><text x="64" y="54">4</text><text x="176" y="54">12</text>
+              <text x="36" y="92">2</text><text x="92" y="92">6</text><text x="148" y="92">10</text><text x="204" y="92">14</text>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="tag">COMP2119</span>
+          <h2>Data Structures from Scratch</h2>
+          <p>Recursion to Huffman coding, explained from the ground up with step-through animations, worked tutorials and every assignment solved.</p>
+          <ul class="facts">
+            <li>11 chapters</li><li>3 tutorials</li><li>3 practice sets</li><li>3 written + 2 programming assignments</li><li>Revision notes</li>
+          </ul>
+          <div class="go">Open the guide <span aria-hidden="true">→</span></div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card phys" href="phys1650/">
+        <div class="art phys" aria-hidden="true">
+          <svg viewBox="0 0 240 104" role="presentation">
+            <g fill="#e8ebfa" fill-opacity=".75">
+              <circle cx="14" cy="14" r="1.2"/><circle cx="58" cy="9" r="1"/><circle cx="96" cy="20" r="1.3"/><circle cx="132" cy="8" r="1"/><circle cx="170" cy="16" r="1.2"/><circle cx="222" cy="10" r="1"/>
+              <circle cx="12" cy="88" r="1"/><circle cx="70" cy="96" r="1.2"/><circle cx="118" cy="92" r="1"/><circle cx="160" cy="97" r="1.3"/><circle cx="198" cy="90" r="1"/><circle cx="230" cy="76" r="1.1"/>
+            </g>
+            <ellipse cx="136" cy="52" rx="98" ry="40" fill="none" stroke="#e8ebfa" stroke-opacity=".55" stroke-width="1.4" stroke-dasharray="4 4"/>
+            <circle cx="46" cy="52" r="14" fill="#ffc94a" fill-opacity=".18"/>
+            <circle cx="46" cy="52" r="7" fill="#ffc94a"/>
+            <circle cx="216" cy="29" r="6" fill="#7aa7ff"/>
+            <circle cx="226" cy="21" r="2" fill="#e8ebfa"/>
+          </svg>
+        </div>
+        <div class="body">
+          <span class="tag">PHYS1650</span>
+          <h2>Nature of the Universe</h2>
+          <p>From units and the night sky to black holes and the Big Bang, in plain language, with an exam-style way of thinking and a full Test 2 preparation section.</p>
+          <ul class="facts">
+            <li>19 chapters</li><li>Test 2 preparation</li><li>Assignments 1 and 2 explained</li><li>Test 1 explained</li>
+          </ul>
+          <div class="go">Open the guide <span aria-hidden="true">→</span></div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <p class="foot">Each guide remembers its own light or dark setting. To return to this page from inside a guide, use the browser’s Back button or open the site’s front page.</p>
+</div>
+<script>
+(function(){
+  var KEY='hub-theme',root=document.documentElement,btn=document.getElementById('themeBtn');
+  function apply(t){root.setAttribute('data-theme',t);btn.textContent=t==='dark'?'Light':'Dark'}
+  var t='light';try{t=localStorage.getItem(KEY)||'light'}catch(e){}
+  apply(t);
+  btn.addEventListener('click',function(){t=t==='dark'?'light':'dark';apply(t);try{localStorage.setItem(KEY,t)}catch(e){}});
+})();
+</script>
+</body>
+</html>
