@@ -145,6 +145,16 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 
 @media(max-width:640px){svg .t-s{font-size:17px}}
 
+/* added: flashcards, readiness tracker */
+.fcard{display:flex;flex-direction:column;gap:.6rem;justify-content:center;width:100%;min-height:170px;margin:.6rem 0;padding:1.1rem 1.2rem;border:1px solid var(--line);border-radius:16px;background:var(--surface);box-shadow:var(--shadow);cursor:pointer;text-align:left;font:inherit;color:inherit;position:relative}
+.fcard.back{background:var(--accent-soft);border-color:var(--accent)}
+.fcard .fside{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fcard .ftext{font-size:1.08rem;line-height:1.5}
+.fcard .fknown{position:absolute;top:.7rem;right:.9rem;font-size:.78rem;color:var(--good);font-weight:600}
+.rbar{height:10px;border-radius:999px;background:var(--surface2);overflow:hidden;margin:.4rem 0}
+.rbar i{display:block;height:100%;width:0;background:var(--good);transition:width .3s}
+.rchk{display:flex;gap:.6rem;align-items:flex-start;padding:.45rem 0;border-bottom:1px solid var(--line);cursor:pointer}
+.rchk input{margin-top:.35rem;width:1.05rem;height:1.05rem;flex:none;accent-color:var(--good)}
 </style>
 <div class="bar"><div class="in">
 <a class="brand" href="#home"><i></i>PHYS1650 Simple Guide</a>
@@ -578,6 +588,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>Why do we not get a solar eclipse every month?</summary><div>The Moon’s orbit is tilted relative to the ecliptic, so at most new moons the Moon’s shadow passes north or south of the Earth.</div></details>
 <details class="qa"><summary>Will total solar eclipses last for ever?</summary><div>No. Tidal friction makes the Moon recede; in tens of thousands of years its angular size will be too small to cover the Sun.</div></details></div>
 
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="5-7" data-title="What-if trainer: Chapters 5 to 7" data-sub="applied reasoning"></div></div>
+
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch7"></div></div>
 <div class="sec"><h2>Chapter 7 must-know list</h2>
 <ul><li>Moon: 30 Earth diameters away, radius ¼, mass 1/81, no atmosphere, maria, craters, dead; synodic month 29.5 d; synchronous rotation; giant-impact formation.</li>
@@ -689,6 +703,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>On a planet that spins <i>faster than it orbits</i> in the <i>same</i> direction (like Earth), is the solar day longer or shorter than the sidereal day? What if the spin is reversed?</summary><div>Same direction: the planet must turn extra to catch up with the Sun, so the solar day is <b>longer</b>. Reversed spin: the Sun comes round early, so the solar day is <b>shorter</b>. This is Assignment 1 Question 7.</div></details>
 </div>
 
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="8" data-title="What-if trainer: Chapter 8" data-sub="applied reasoning"></div></div>
+
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch8"></div></div>
 <div class="sec"><h2>Chapter 8 must-know list</h2>
 <ul>
@@ -785,6 +803,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>Which has the larger mass: Jupiter or all the other seven planets combined?</summary><div>Jupiter. 317.9 compares with 95.2 + 14.5 + 17.2 + 1 + 0.82 + 0.11 + 0.06 ≈ 129 Earth masses for all the others. This kind of “add them up and compare” step is easy marks with the table.</div></details>
 </div>
 
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="9" data-title="What-if trainer: Chapter 9" data-sub="applied reasoning"></div></div>
+
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch9"></div></div>
 <div class="sec"><h2>Chapter 9 must-know list</h2>
 <ul><li>Jovian = Jupiter, Saturn, Uranus, Neptune: big, massive, low density, fast spin, rings, many moons, magnetic fields.</li>
@@ -866,6 +888,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>A small meteoroid the size of a sand grain enters the atmosphere. Will it become a meteorite?</summary><div>Almost certainly not: it burns up completely and we only see a meteor (a brief streak). Only massive objects have anything left to hit the ground and be called meteorites.</div></details>
 <details class="qa"><summary>Why do the planets have nearly circular orbits near one plane but comets and Pluto do not?</summary><div>The notes’ own evidence: Pluto’s orbit is inclined 17.2° and crosses inside Neptune’s, and comets have long elliptical orbits. They are different populations of small bodies, which is why they challenge our “major planet / minor planet” picture.</div></details>
 </div>
+
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="10" data-title="What-if trainer: Chapter 10" data-sub="applied reasoning"></div></div>
 
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch10"></div></div>
 <div class="sec"><h2>Chapter 10 must-know list</h2>
@@ -956,6 +982,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>At the start of a sunspot cycle the spots are seen at which latitudes? At the end?</summary><div>Start: high latitudes (far from the equator, about 30°). End: low latitudes, near the equator. The cycle repeats about every 11 years.</div></details>
 <details class="qa"><summary>Convert: the corona is 10⁶ K. What is that in °C, roughly?</summary><div>°C = K − 273, so about 999,727 °C, i.e. about a million degrees: at such high temperatures the 273 hardly matters.</div></details>
 </div>
+
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="11" data-title="What-if trainer: Chapter 11" data-sub="applied reasoning"></div></div>
 
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch11"></div></div>
 <div class="sec"><h2>Chapter 11 must-know list</h2>
@@ -1054,6 +1084,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>Explain why astronomers use absolute magnitude instead of apparent magnitude to compare stars.</summary><div>Apparent magnitude depends on distance, so a star may look dim just because it is far. Absolute magnitude puts every star at the same distance (10 pc), so differences in M are real differences in luminosity.</div></details>
 </div>
 
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="12" data-title="What-if trainer: Chapter 12" data-sub="applied reasoning"></div></div>
+
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch12"></div></div>
 <div class="sec"><h2>Chapter 12 must-know list</h2>
 <ul><li>Star = gas ball, own gravity, core fusion. Sun yes, Jupiter no.</li>
@@ -1133,6 +1167,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>Why would a nova happen in a binary but not in a single star?</summary><div>A nova needs <b>material transferred</b> from one star to its companion. When enough has accumulated on the receiving star’s surface, it explodes. A single star has no such supply.</div></details>
 </div>
 
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="13" data-title="What-if trainer: Chapter 13" data-sub="applied reasoning"></div></div>
+
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch13"></div></div>
 <div class="sec"><h2>Chapter 13 must-know list</h2>
 <ul><li>Binary types: visual, spectroscopic, eclipsing, contact, astrometric (+ optical doubles are not binaries). &gt; 50% of stars are in binary/multiple systems; periods give masses and sizes.</li>
@@ -1203,6 +1241,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>A student says: “The Sun will stay on the main sequence for ever because fusion keeps it stable.” Correct them.</summary><div>Fusion keeps it stable only while there is hydrogen fuel in the core. The Sun spends about 90% of its life on the main sequence, which is billions of years, not for ever. When the fuel runs out the star leaves the main sequence (Chapter 15).</div></details>
 <details class="qa"><summary>Where is a star on the H-R diagram when it is a cold cloud? As it contracts, in which direction does it move?</summary><div>On the right (low temperature, dim). Contraction heats it, so it moves to the left toward the main sequence.</div></details>
 </div>
+
+<div class="sec"><h2>Apply it: what-if questions</h2>
+<p>Tests ask you to apply the ideas above to situations the notes never describe (Test 1: the sky at the south pole; Assignment 2: two moons, eclipses seen from Saturn). Answer each one on paper before revealing the core idea and the model answer.</p>
+<div class="demo" data-demo="whatif" data-ch="14" data-title="What-if trainer: Chapter 14" data-sub="applied reasoning"></div></div>
 
 <div class="sec"><h2>Quick check</h2><div class="quiz" data-quiz="ch14"></div></div>
 <div class="sec"><h2>Chapter 14 must-know list</h2>
@@ -1486,10 +1528,23 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <div class="pn"><a href="#ch18"><small>Previous</small>Chapter 18 · Galaxies</a><a href="#home"><small>Home</small>Back to all chapters</a></div>
 </section>
 <section class="view" id="test2" data-title="Test 2 preparation">
-<div class="hero"><div class="eyebrow">Test 2 · Chapters 8 to 14</div><h1>Rigorous preparation for Test 2</h1>
+<div class="hero"><div class="eyebrow">Test 2 · Chapters 8 to 14, plus the Ch 5–7 topics Assignment 2 tested</div><h1>Rigorous preparation for Test 2</h1>
 <p><b>The test:</b> Monday 9 November, 6:00 to 6:50 pm, three short questions, calculator allowed, same style as the assignments, covering what is taught up to 5 November. This page trains you for that style: how the questions are built, how to write answers that earn every mark, and a lot of practice with worked solutions.</p>
 <span class="tag">Practice · formulas · mock tests</span></div>
 <ul class="toc"></ul>
+
+<div class="sec"><h2>What Test 2 covers: read this first</h2>
+<div class="box trap"><b>Don’t skip Chapters 5 to 7 without checking</b>
+<p>Moodle says: <i>“Test Two is on November 9, 2026, 6:00pm–6:50pm. The test covers up to and includes what we are going to discuss on November 5. There will be three short questions, in a format similar to the assignments.”</i> That tells you where the test <b>ends</b>, not where it starts.</p>
+<p>Test 1 covered up to 28 September (Chapters 1 to 4 and telescopes from Chapter 5). Assignment 2, the assignment for the period since then, tested <b>Chapter 5</b> (Q1 magnitudes, Q2 black body), <b>Chapter 6</b> (Q3 tides) and <b>Chapter 7</b> (Q4 eclipses) as well as Chapters 8 to 12. So the safest assumption is: <b>everything taught after 28 September</b>, that is, the rest of Chapter 5, Chapters 6 and 7, and Chapters 8 to 14.</p>
+<p>Ask at <b>Tutorial 4 (Thursday 5 November, 3:00–4:50 pm, KK101)</b> which chapters Test 2 starts from. Until then, this page covers both: the Ch 5–7 catch-up section below is short, and it targets exactly what Assignment 2 asked.</p></div>
+<div class="scroll"><table>
+<thead><tr><th>Where the material came from</th><th>Chapters</th><th>Already tested?</th><th>Priority for Test 2</th></tr></thead>
+<tbody>
+<tr><td>Test 1, Assignment 1</td><td>1 to 4, telescopes (5)</td><td>Yes (Test 1)</td><td>Low: only as background (angular size, Kepler 3, solar day)</td></tr>
+<tr><td>Assignment 2 Q1 to Q4</td><td>5 (light, black body, magnitude), 6 (tides), 7 (Moon, eclipses)</td><td>Assignment only</td><td><b>Medium to high</b>: likely fair game</td></tr>
+<tr><td>Assignment 2 Q5 to Q10, lectures to 5 Nov</td><td>8 to 14</td><td>Partly (Ch 8–12 in Assignment 2)</td><td><b>Highest</b>; Ch 13 and 14 were never assessed yet, so expect at least one question there</td></tr>
+</tbody></table></div></div>
 
 <div class="sec"><h2>How this course asks questions</h2>
 <p>After reading Test 1 and Assignments 1 and 2 with their solutions, almost every question falls into one of seven patterns. Learn the pattern and you know what to do before reading the details.</p>
@@ -1504,12 +1559,12 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <tr><td><b>6. Apply to a variant</b></td><td>“What if the Earth rotated the other way?” “What does the south-pole sky look like?”</td><td>Take the rule you know and run it on the new case; state directions and frames clearly.</td></tr>
 <tr><td><b>7. Classify with criteria</b></td><td>“Is Pluto a planet? Is a protostar a star?”</td><td>List the criteria, test the object against each, then conclude.</td></tr>
 </tbody></table></div>
-<div class="box think"><b>Think like the exam</b><p>The assignment solutions repeat one message: <b>vague answers lose marks</b>. In Test 1 the solution says that just answering “clockwise or anticlockwise” is not clear enough: say <i>viewed from where</i>. In Assignment 2, the questions say “look up the necessary data and calculate”: you may need to bring in a number you know (Sun’s absolute magnitude 4.8, Earth’s density 5.5, 1 pc = 3.26 ly) and show the working. Expect <b>two calculations and one explain-type</b> in a typical test, and expect every question to be a <b>variation</b> on something done in lectures, not a copy.</p></div></div>
+<div class="box think"><b>Think like the exam</b><p>The assignment solutions repeat one message: <b>vague answers lose marks</b>. In Test 1 the solution says that just answering “clockwise or anticlockwise” is not clear enough: say <i>viewed from where</i>. In Assignment 2, the questions say “look up the necessary data and calculate”: you may need to bring in a number you know (Sun’s absolute magnitude 4.8, Earth’s density 5.5, 1 pc = 3.26 ly) and show the working. Test 1 had <b>no long calculation at all</b> (all three questions were describe/explain), while Assignment 2 had four calculations out of ten. So be ready for both: at least one question that needs a number (magnitude, parallax, angular size, Kepler) and at least one that applies an idea to a new situation. Expect every question to be a <b>variation</b> on something done in lectures, not a copy.</p></div></div>
 
 <div class="sec"><h2>Writing answers that earn every mark</h2>
 <div class="box ok"><b>Four templates</b>
 <ul><li><b>Explain why:</b> “Because [cause]. This means [mechanism]. So [result].” Example: Venus has a thick CO₂ atmosphere (90 bar), which traps heat (greenhouse effect), so the whole surface is about 500 °C, hotter than Mercury even though Mercury is closer.</li>
-<li><b>Compare:</b> use the same property for both sides. “Earth’s day is 24 h; Mars’s is 24.6 h (similar). Earth’s atmosphere is 78% N₂; Mars’s is 95% CO₂ (different).”</li>
+<li><b>Compare:</b> use the same property for both sides. “Earth’s day is 24 h; Mars’s is about 25 h (similar). Earth’s atmosphere is 78% N₂; Mars’s is 95% CO₂ (different).”</li>
 <li><b>Calculate:</b> <i>Formula → numbers → answer + unit → meaning.</i> Even if the arithmetic slips, the method marks survive.</li>
 <li><b>Comment on a statement:</b> “This is false/partly true. The correct statement is… because…”.</li></ul></div>
 <div class="box trap"><b>Common mark-losers</b><ul>
@@ -1536,6 +1591,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <tr><td>Angular size (small angle)</td><td>θ (rad) = D / d; θ (°) = 57.3 × D / d</td><td>Sun and Moon from Earth ≈ 0.5°</td></tr>
 <tr><td>Solar day</td><td>1/solar = 1/sidereal − 1/year (same-direction spin)</td><td>Venus (retrograde): +; solar day 117 d</td></tr>
 <tr><td>Black body (Ch 5)</td><td>Energy per unit area ∝ T⁴; peak wavelength ∝ 1/T</td><td>4000 K spot vs 6000 K: (2/3)⁴ ≈ 0.2</td></tr>
+<tr><td>Doppler effect (Ch 5)</td><td>(λ<sub>observed</sub> − λ<sub>original</sub>) ÷ λ<sub>original</sub> = v ÷ c</td><td>Longer λ (red-shift) = moving away; only motion along the line of sight</td></tr>
+<tr><td>Kelvin (Ch 11)</td><td>K = °C + 273</td><td>27 °C = 300 K; nothing is below 0 K</td></tr>
+<tr><td>Two stars at the same distance (Ch 13)</td><td>Δm = ΔM</td><td>Cluster members: compare luminosity straight from m</td></tr>
+<tr><td>Same temperature (Ch 5, 12)</td><td>L ∝ surface area ∝ R²</td><td>400× luminosity at the same colour → 20× the radius</td></tr>
 <tr><td>Sun facts</td><td>Radius ≈ 110 R⊕; mass ≈ 3.3 × 10⁵ M⊕; 70% H; photosphere 6000 K</td><td>Volume ≈ 110³ ≈ 1.3 million Earths</td></tr>
 </tbody></table></div></div>
 
@@ -1544,7 +1603,7 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <thead><tr><th>Object</th><th>Remember</th></tr></thead>
 <tbody>
 <tr><td>Mercury</td><td>Sodium atmosphere (very thin), many craters, extreme day–night temperature swing.</td></tr>
-<tr><td>Venus</td><td>Retrograde spin, almost no tilt (no seasons), 90 bar CO₂, acid clouds, ≈ 500 °C everywhere, few craters (young surface).</td></tr>
+<tr><td>Venus</td><td>Retrograde spin, almost no tilt (no seasons), 90 bar CO₂, acid clouds, ≈ 500 °C everywhere, few craters (the thick atmosphere protects the surface).</td></tr>
 <tr><td>Earth</td><td>Density 5.5, tilt 23.5°, liquid water; the reference for density and gravity.</td></tr>
 <tr><td>Mars</td><td>24° tilt (seasons), 1% atmosphere (95% CO₂), −100 to −10 °C, red from iron oxide, Olympus Mons, huge canyon, two small moons.</td></tr>
 <tr><td>Jupiter</td><td>10 h spin, flattened; metallic hydrogen → magnetic field; radiates more than it receives; Great Red Spot; Galilean moons (Io volcanic, Ganymede largest).</td></tr>
@@ -1558,9 +1617,36 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <tr><td>Birth of stars</td><td>Cloud → trigger → contraction → protostar (not a star) → ignition at ≥ 0.1 solar mass. Mass decides everything. Massive: short life, CNO cycle. Low mass: long life, p-p chain.</td></tr>
 </tbody></table></div></div>
 
+<div class="sec"><h2>Chapters 5 to 7: the part Assignment 2 tested</h2>
+<p>A one-screen recap of everything from Chapters 5, 6 and 7 that Assignment 2 used or that is likely to come up as an applied question. Full explanations with animations are on the <a href="#ch5">Chapter 5</a>, <a href="#ch6">Chapter 6</a> and <a href="#ch7">Chapter 7</a> pages.</p>
+<div class="scroll"><table>
+<thead><tr><th>Topic</th><th>What the notes say</th><th>How it gets applied</th></tr></thead>
+<tbody>
+<tr><td>Black body</td><td>Warm, dense object; spectrum depends only on surface temperature; peak red → yellow → blue → UV as T rises; hotter = more energy per area.</td><td>Colour gives temperature; luminosity needs temperature <i>and</i> size. Assignment 2 Q2.</td></tr>
+<tr><td>Spectral lines</td><td>Low-density gas absorbs particular wavelengths: dark absorption lines; seen from the side, bright emission lines. Each gas has its own set.</td><td>Tells us what a star’s outer layers are made of; lines are what the Doppler shift is measured on.</td></tr>
+<tr><td>Doppler effect</td><td>Approaching: shorter λ (blue-shift); receding: longer λ (red-shift). Δλ/λ = v/c.</td><td>Spectroscopic binaries (Ch 13), the Sun’s differential rotation (Ch 11). Only line-of-sight motion.</td></tr>
+<tr><td>Atmosphere and telescopes</td><td>Air is opaque to gamma rays, transparent to visible light.</td><td>Gamma-ray (and X-ray) telescopes must be in space.</td></tr>
+<tr><td>Magnitude</td><td>A 100 times brighter than B → m<sub>B</sub> − m<sub>A</sub> = 5; m = −2.5 log₁₀(I/I₀); dimmer = larger number.</td><td>Assignment 2 Q1; all of Ch 12.</td></tr>
+<tr><td>Tides</td><td>Moon pulls the near-side water most, the Earth less, far-side water least → two bulges → two high tides a day. Sun adds to it: highest tides at new and full moon.</td><td>Assignment 2 Q3 (two moons on opposite sides → still two). Moon farther away → weaker tides.</td></tr>
+<tr><td>Moon facts</td><td>Distance ≈ 30 Earth diameters; radius ≈ ¼, mass ≈ 1/81 of Earth’s; no atmosphere; many craters → “dead”; maria = solidified lava; synodic month 29.5 days; synchronous rotation.</td><td>Craters as evidence of no activity (compare Mercury, Ch 8). Synchronous rotation: compare Charon (Ch 10).</td></tr>
+<tr><td>Lunar eclipse</td><td>Moon in Earth’s umbra → total; partly → partial; only in penumbra → usually “no eclipse” (from the Moon: partial solar eclipse). Only at full moon.</td><td>Assignment 2 Q4(a): never at crescent moon.</td></tr>
+<tr><td>Solar eclipse</td><td>Only at new moon. Partial most common; total needs a narrow path, lasts about two minutes, shows the corona; annular when the Moon looks too small.</td><td>Assignment 2 Q4(b) and Q6 (Titan). Compare angular sizes to decide total vs annular.</td></tr>
+<tr><td>Why not every month</td><td>The Moon’s orbital plane is tilted to the Earth’s.</td><td>Most full and new moons miss the shadow.</td></tr>
+</tbody></table></div>
+<div class="demo" data-demo="whatif" data-ch="5-7" data-title="What-if trainer: Chapters 5 to 7" data-sub="applied reasoning"></div></div>
+
+<div class="sec"><h2>Apply the core idea: the what-if trainer</h2>
+<p>Test 1’s hardest question asked what the sky looks like <b>at the south pole</b>, something the notes never describe directly. Assignment 2 asked about <b>two moons</b> and an eclipse <b>from Saturn</b>. That is the course’s style: a core idea from the notes, applied to a situation the notes don’t mention. This trainer has about 50 questions of that kind across Chapters 5 to 14.</p>
+<div class="box think"><b>How to use it</b><p>Read the question and write your answer on paper first. If you are stuck, reveal only the <b>core idea</b> and try again. Then reveal the model answer and compare: did you give the reason, not just the result? The <b>mark-saver</b> lines are the details that separate full marks from partial marks.</p></div>
+<div class="demo" data-demo="whatif" data-title="What-if trainer: all chapters" data-sub="about 50 applied questions"></div></div>
+
 <div class="sec"><h2>Numeric drills</h2>
 <p>Fifteen short calculations covering every formula above. Type your answer (about 3% tolerance) and press Check. If you are stuck, the hint tells you the idea and the solution shows every step.</p>
 <div class="demo" data-demo="numq" data-title="Numeric drills" data-sub="15 calculations"></div></div>
+
+<div class="sec"><h2>Numeric drills, round 2: applied</h2>
+<p>Twelve more calculations, each one a twist on an assignment question: Doppler, the Sun seen from Saturn, a Cepheid distance, eclipses on Mars, parallax from Mars, Sedna’s period, and more.</p>
+<div class="demo" data-demo="numq" data-set="2" data-title="Numeric drills, round 2" data-sub="12 applied calculations"></div></div>
 
 <div class="sec"><h2>Statement judge: true or false?</h2>
 <p>This is pattern 5 (“comment on the statement”). The false statements are exactly the misconceptions that exams like to test, so read the explanation even when you are right.</p>
@@ -1587,6 +1673,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <details class="qa"><summary>A protostar shines brightly. Why isn’t it a star?</summary><div>A star must make its own energy by nuclear fusion in its core. A protostar shines from gravitational contraction energy. Fusion begins only when the core reaches about 10 million K, which needs at least about 0.1 solar mass; below that the object is a brown dwarf.</div></details>
 <details class="qa"><summary>Why do massive stars live a much shorter time although they have more fuel?</summary><div>They burn it far faster. Luminosity rises steeply with mass (roughly as M³ to M⁴), while fuel increases only as M. Lifetime ∝ fuel ÷ burn rate, so the more massive star runs out much sooner: the most massive live around a million years, small ones tens of billions.</div></details>
 </div>
+
+<div class="sec"><h2>Flashcards: the facts and numbers to know cold</h2>
+<p>About 65 cards covering Chapters 5 to 14. Tap a card to flip it. Mark it <b>I knew it</b> or <b>Again</b>; choose the <b>Not yet known</b> deck to drill only the ones you missed. Your progress is kept in this browser.</p>
+<div class="demo" data-demo="flash" data-title="Flashcards" data-sub="tap to flip"></div></div>
 
 <div class="sec"><h2>Mock Test A (50 minutes)</h2>
 <p>Three questions, 40 + 30 + 30 marks like Test 1. Start the clock, write full answers on paper, and mark yourself with the model answers.</p>
@@ -1643,12 +1733,46 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <p><b>(b)</b> [10] Open: hundreds of stars, young, irregular/loose (e.g. the Pleiades M45). Globular: more than 10,000 stars, old, compact and concentrated (e.g. M80). Four marks for each of two matching pairs and two for the third.</p>
 <p><b>(c)</b> [10] M = 5.0 − 5 log(25/10) = 5.0 − 1.99 = <b>3.01</b> [5]. ΔM = 4.8 − 3.01 = 1.79 → ratio = 10<sup>0.4 × 1.79</sup> ≈ <b>5.2</b> [5]: it is about 5 times more luminous than the Sun.</p></div></details></div>
 
+<div class="sec"><h2>Mock Test C (50 minutes): closest to the real thing</h2>
+<p>Built like Test 1 and Assignment 2: every part takes a core idea and applies it to something new, and the chapters are mixed inside each question. Do it last, on paper, under the clock.</p>
+<div class="box key"><b>Question 1 (40 marks)</b>
+<p>Planet Q orbits a Sun-like star. Its axis tilt is 2°, it has a CO₂ atmosphere 50 times as thick as Earth’s, and it spins <b>backwards</b> once every 200 Earth days while its year is 150 Earth days.</p>
+<p>(a) Predict, with reasons: does Q have seasons? Is its day–night temperature difference large or small? Would you expect many craters? [15]</p>
+<p>(b) Find the length of Q’s solar day (sunrise to sunrise). In which direction does its sun rise? [10]</p>
+<p>(c) Q has one moon, 2000 km across, 300,000 km away. Its sun looks 0.5° across from Q. Can Q see total solar eclipses? If Q had a second, identical moon always on the opposite side, how many tidal bulges would its oceans have? [15]</p></div>
+<details class="qa"><summary>Model answer and marking points: C1</summary><div>
+<p><b>(a)</b> [15] Tilt only 2°, so the sun stays within 2° of the equator all year: <b>no real seasons</b> [5] (like Venus). Very thick CO₂ atmosphere: strong greenhouse effect traps heat and the thick air spreads it, so the <b>day–night difference is small</b> and the surface is hot [5]. The thick atmosphere slows and burns up meteoroids, so <b>few craters</b> [5] (Venus vs Mercury).</p>
+<p><b>(b)</b> [10] Spin opposite to orbit: 1/solar = 1/sidereal + 1/year [4] = 1/200 + 1/150 = 0.0050 + 0.00667 = 0.01167 → <b>solar day ≈ 86 Earth days</b> [3], shorter than the spin. The sun rises in the <b>west</b> because the spin is backwards [3].</p>
+<p><b>(c)</b> [15] Moon’s angular size = 2000 ÷ 300,000 = 0.00667 rad × 57.3 = <b>0.38°</b> [5]. That is smaller than the sun’s 0.5°, so the moon cannot cover the whole sun: only annular (and partial) eclipses, <b>no total eclipse</b> [4]. Two moons on opposite sides: each makes a bulge toward it and one on the far side, and these coincide, so there are still <b>two bulges</b> (larger ones) [6] (Assignment 2 Q3).</p></div></details>
+<div class="box key"><b>Question 2 (30 marks)</b>
+<p>Star P’s spectrum peaks in the blue; star Q’s peaks in the red. Both have apparent magnitude 6.0. P’s parallax is 0.01″; Q’s is 0.002″.</p>
+<p>(a) Which star has the higher surface temperature? Explain. [4]</p>
+<p>(b) Find the absolute magnitude of each star. Which is more luminous, and by how many times? [14]</p>
+<p>(c) Explain why Q must be much larger than P, and say where each lies on the H-R diagram. [8]</p>
+<p>(d) A line in Q’s spectrum that is at 500.0 nm in the laboratory is observed at 499.5 nm. What does this tell you about Q’s motion? Does it tell you Q’s proper motion? [4]</p></div>
+<details class="qa"><summary>Model answer and marking points: C2</summary><div>
+<p><b>(a)</b> [4] P. A black body’s peak moves from red to blue as temperature rises [2], so the blue-peaked star is hotter [2].</p>
+<p><b>(b)</b> [14] d<sub>P</sub> = 1/0.01 = 100 pc, d<sub>Q</sub> = 1/0.002 = 500 pc [4]. M<sub>P</sub> = 6.0 − 5 log₁₀(10) = <b>1.0</b> [3]; M<sub>Q</sub> = 6.0 − 5 log₁₀(50) = 6.0 − 8.49 = <b>−2.5</b> [3]. Q is more luminous (smaller M) [1] by 10<sup>0.4 × 3.5</sup> = <b>25 times</b> [3]. Check: same m, 5 times farther → 5² = 25 ✓.</p>
+<p><b>(c)</b> [8] Q is cooler, so each unit of its surface gives out less energy [2]; yet it is 25 times more luminous, so it must have a much larger surface area: a much larger star [3]. On the H-R diagram Q is at the upper right (cool and luminous: giant region); P is to the left on the main sequence (hot, M = 1) [3].</p>
+<p><b>(d)</b> [4] Shorter wavelength: blue-shift, Q is approaching [1]; v = c × 0.5/500 = 3 × 10⁵ × 0.001 = <b>300 km/s</b> toward us [2]. No: Doppler gives only motion along the line of sight; proper motion is motion across the sky [1].</p></div></details>
+<div class="box key"><b>Question 3 (30 marks)</b>
+<p>(a) A cloud of gas in a quiet region of the galaxy has not changed for millions of years. Then a nearby star explodes as a supernova. Describe, step by step, how a star could form from part of this cloud, and state the condition that decides whether the protostar becomes a star. [16]</p>
+<p>(b) Compare a 0.8 and an 8 solar-mass main-sequence star: the main nuclear reaction, the interior structure (where energy is carried by convection and by radiation) and the main-sequence lifetime. Explain why the more massive star has the shorter life. [14]</p></div>
+<details class="qa"><summary>Model answer and marking points: C3</summary><div>
+<p><b>(a)</b> [16] Undisturbed clouds don’t change [1]; the supernova’s shock wave compresses part of the cloud, slightly raising its density [3]; the cloud’s own gravity then makes that region contract [2]; it heats up and forms a protostar (energy from gravitational contraction, no fusion yet, so not a star; accretion disk and jets) [4]; if its mass is at least about <b>0.1 solar mass</b>, the core becomes hot and dense enough for hydrogen nuclei to overcome their electric repulsion and fuse [3]; gas and radiation pressure then balance gravity and the star settles on the main sequence; below 0.1 solar mass it becomes a brown dwarf [3].</p>
+<p><b>(b)</b> [14] 0.8: below 1.1 solar masses → <b>p-p chain</b> [2], radiative core and convective shell, like the Sun [2], lives tens of billions of years [2]. 8: above 1.1 → <b>CNO cycle</b> (carbon catalyst) [2], convective core and radiative shell [2], lives only tens of millions of years at most [1]. It has more fuel, but its core is hotter and denser and the CNO cycle much faster, so it burns the fuel far faster: lifetime = fuel ÷ rate is shorter [3].</p></div></details></div>
+
+<div class="sec"><h2>Readiness tracker</h2>
+<p>Tick each item when it is honestly done. It is saved in this browser.</p>
+<div class="demo" data-demo="ready" data-title="Test 2 readiness" data-sub="12 checks"></div></div>
+
 <div class="sec"><h2>Last-day checklist</h2>
 <div class="box ok"><ul>
 <li>Know the seven question patterns and the four answer templates.</li>
 <li>Write the formula sheet from memory, then compare with this page.</li>
-<li>Do all fifteen numeric drills and re-do any you missed.</li>
-<li>Do both mock tests on paper under the clock; mark yourself honestly.</li>
+<li>Do both rounds of numeric drills (15 + 12) and re-do any you missed.</li>
+<li>Do the what-if trainer chapter by chapter without revealing answers first.</li>
+<li>Do all three mock tests (A, B, then C) on paper under the clock; mark yourself honestly.</li>
 <li>Check units in every calculation: pc vs ly, magnitudes vs times, degrees vs radians.</li>
 <li>Calculator in the correct mode (degrees); log means log₁₀.</li>
 <li>Read each question twice; count how many points or parts are asked.</li></ul></div>
@@ -1656,8 +1780,8 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 </section>
 <section class="view" id="hw2" data-title="Assignment 2 explained">
 <div class="hero"><div class="eyebrow">Assignment 2 · due 2 November, 5 pm</div><h1>Assignment 2, question by question</h1>
-<p>Ten questions, 10 marks each. Each one below has the question, what it is really testing, a model answer you can write in the exam style, and the slip that loses marks. These are my worked answers, not the official solutions; use them to check your own work and to learn the method.</p>
-<span class="tag">Unofficial worked answers</span></div>
+<p>Ten questions, 10 marks each. Each one below has the question, what it is really testing, a model answer you can write in the exam style, and the slip that loses marks. The official solutions are now on Moodle. Every answer below agrees with them; where the official answer is shorter or words a point differently, an <b>Official solution</b> note shows what the marker’s key contains.</p>
+<span class="tag">Checked against the official solutions</span></div>
 <ul class="toc"></ul>
 
 <div class="sec"><h2>Q1. Brightness ratio to magnitude</h2>
@@ -1673,6 +1797,7 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <p><b>Black body:</b> an ideal object that absorbs all radiation falling on it and, because it is hot and dense, radiates a continuous spectrum that depends <b>only on its temperature</b>. Stars and glowing metal are close to this.</p>
 <p><b>Estimating T:</b> (1) measure the star’s spectrum (or colour) and find the wavelength λ<sub>max</sub> where the intensity peaks. (2) The hotter the star, the shorter the peak wavelength (red → yellow → blue → ultraviolet). (3) Wien’s law: T = 2.9 × 10⁶ nm·K ÷ λ<sub>max</sub>. Example: a peak at 500 nm gives T ≈ 5800 K, like the Sun.</p>
 <p>Extra marks: hotter objects also radiate more energy per unit area (energy ∝ T⁴), so if the luminosity and radius are known, T can also be found from L = 4πR²σT⁴.</p></div>
+<div class="box key"><b>Official solution: the key points</b><p>Absorbs all radiation that hits it and emits a spectrum with a peak; the spectrum depends <b>only on the surface temperature</b>, not on the chemical composition or shape; warm → peak in the red, hotter → yellow; no real object is a perfect black body but a star comes very close; so estimate the temperature from the star’s colour, or better from its spectrum. Wien’s law and the T⁴ rule above are extra (not in the notes): fine to add, never required.</p></div>
 <div class="box think"><b>Think like the exam</b><p>The notes say the spectrum <b>depends only on the surface temperature</b>, and that colour mainly reflects temperature while luminosity depends on both temperature and surface area. The question asks “how”, so describe a <b>method</b> (measure, find the peak, convert), not just “look at the colour”.</p></div></div>
 
 <div class="sec"><h2>Q3. Two moons and the number of high tides</h2>
@@ -1686,15 +1811,15 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <div class="box key"><b>Question</b><p>(a) “Lunar eclipses never occur during a crescent moon.” (b) “Although solar eclipses are extremely rare on the day prior to Mid-Autumn Festival, it has been recorded at least twice in history.”</p></div>
 <div class="box ok"><b>Model answer (a): true</b>
 <p>A lunar eclipse happens when the Moon enters the Earth’s shadow, so the Moon must be on the far side of the Earth from the Sun: <b>full moon</b>. A crescent moon is near the Sun in the sky, on the lit-side-toward-Sun end of its orbit, so the Earth’s shadow cannot reach it. (A partly eclipsed Moon can look like a bite, but its phase is still full.)</p></div>
-<div class="box ok"><b>Model answer (b): the physics says it is not merely rare</b>
-<p>A solar eclipse needs the Moon between the Earth and the Sun: <b>new moon</b>. Mid-Autumn Festival is the 15th day of the 8th lunar month, at about full moon, so the day before is about 13 days after new moon. A solar eclipse then is not just rare, it should be impossible with an accurate calendar. If an old record exists, the explanation must be an error in the old calendar (it placed new moon on the wrong day) or mis-dating, not a real eclipse near full moon. I have not checked the two historical records, so in the test argue from the phase.</p></div>
+<div class="box ok"><b>Model answer (b): false</b>
+<p>A solar eclipse needs the Moon between the Earth and the Sun: <b>new moon</b>. Mid-Autumn Festival is the 15th day of the 8th lunar month, at about full moon, so the day before is about 13 days after new moon. On that day the Moon is almost full: nearly behind the Earth, on the side opposite the Sun. It takes almost half a month for the Moon to move from the front of the Earth (needed for a solar eclipse) to the back (full moon), so a solar eclipse on the day before Mid-Autumn Festival <b>could never occur</b>. The statement is false. (Official solution, word for word in substance.)</p></div>
 <div class="box think"><b>Think like the exam</b><p>“Comment on” means: decide true or false, then give the reason from the notes. Here the notes give the reasons: lunar eclipse = Moon behind the Earth; solar eclipse = Moon between Sun and Earth (new moon), and phases follow the Sun–Earth–Moon geometry.</p></div></div>
 
 <div class="sec"><h2>Q5. Three similarities and three differences: Mars and Earth</h2>
 <div class="box key"><b>Question</b><p>State three similarities and three differences between Mars and the Earth.</p></div>
 <div class="scroll"><table><thead><tr><th>Property</th><th>Earth</th><th>Mars</th><th>Similar or different?</th></tr></thead><tbody>
 <tr><td>Type</td><td>Terrestrial: rocky, solid surface</td><td>Terrestrial: rocky, solid surface</td><td>Similar</td></tr>
-<tr><td>Rotation (day)</td><td>24 h</td><td>24.6 h</td><td>Similar</td></tr>
+<tr><td>Rotation (day)</td><td>24 h</td><td>25 h (notes)</td><td>Similar</td></tr>
 <tr><td>Axis tilt (seasons)</td><td>23.5°</td><td>about 24°</td><td>Similar</td></tr>
 <tr><td>Polar ice caps</td><td>yes</td><td>yes</td><td>Similar</td></tr>
 <tr><td>Size</td><td>12,756 km across</td><td>about 6800 km (half)</td><td>Different</td></tr>
@@ -1703,6 +1828,7 @@ a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
 <tr><td>Moons</td><td>one large Moon</td><td>two small irregular ones</td><td>Different</td></tr>
 </tbody></table></div>
 <div class="box ok"><b>Model answer (write three of each)</b><p>Similarities: both terrestrial rocky planets with solid surfaces; both spin in about 24 hours; both have axis tilts of about 24° and hence seasons. Differences: Mars is about half the diameter of the Earth; Mars’s atmosphere is only 1% as thick and mostly CO₂, which leads to a cold, large temperature range, while Earth’s is thick, N₂ and O₂ and holds liquid water; Mars has two tiny irregular moons while Earth has one large Moon.</p></div>
+<div class="box key"><b>Official solution: extra points it accepts</b><p>Similarities also include: Mars has polar ice caps like the Earth; the sidereal rotation period is 25 hours (the notes’ value) against 24. Differences also include: Earth is larger and heavier; the thin atmosphere makes the surface temperature vary enormously; <b>no continental drift on Mars</b>; Mars orbits the Sun in about 23 Earth months, so <b>each season is about twice as long</b> as on Earth. Only three of each are needed.</p></div>
 <div class="box think"><b>Think like the exam</b><p>Compare <b>the same property</b> in each pair: “Earth’s atmosphere is thick, Mars’s is thin”. Do not write two separate facts. Pick points that are clearly right (day length, tilt, atmosphere) and give numbers where you can.</p></div></div>
 
 <div class="sec"><h2>Q6. Titan, the Sun, and a total eclipse on Saturn</h2>
@@ -1962,7 +2088,7 @@ const P=[
  ['ch12','Chapter 12','General properties of stars','Magnitudes, distance, parallax, the H-R diagram.','t2'],
  ['ch13','Chapter 13','Double stars, variable stars, clusters, nebulae','Binary types, Cepheids, clusters, nebulae.','t2'],
  ['ch14','Chapter 14','Birth of stars','From gas cloud to main sequence.','t2'],
- ['test2','Test 2 prep','Rigorous preparation for Test 2','Formula sheet, applied-question patterns, practice sets, mock tests.','prep'],
+ ['test2','Test 2 prep','Rigorous preparation for Test 2','Scope check, Ch 5–7 catch-up, what-if trainer, two drill rounds, flashcards, three mock tests.','prep'],
  ['hw2','Assignment 2','Assignment 2 explained','Every question with a worked answer.','prep'],
  ['hw1','Assignment 1','Assignment 1 explained','Every question with a worked answer.','prep'],
  ['test1','Test 1','Test 1 explained','The questions, the answers, and the thinking behind them.','prep'],
@@ -1975,7 +2101,7 @@ const P=[
  ['ch7','Chapter 7','The Moon and eclipses','Phases, lunar and solar eclipses.','early'],
  ['ch15','Chapter 15','Death of less massive stars','Red giants, planetary nebulae, white dwarfs, novae.','late'],
  ['ch16','Chapter 16','Death of massive stars','Supernovae, neutron stars and pulsars.','late'],
- ['ch17','Chapter 17','The Milky Way','Our galaxy.','late'],
+ ['ch17','Chapter 17','Black holes','Escape velocity, event horizon, how we find them.','late'],
  ['ch18','Chapter 18','Galaxies','Milky Way, dark matter, galaxy types, distances, quasars.','late'],
  ['ch19','Chapter 19','Cosmology','Hubble’s law, the Big Bang and the fate of the universe.','late']
 ];
@@ -3175,8 +3301,8 @@ const NUMQ=[
  {q:'A moon 3000 km across is 1.0 × 10⁶ km from the planet it orbits. Its angular size as seen from the planet, in degrees?',a:.172,tol:.03,u:'degrees',h:'angle (radians) = diameter ÷ distance; × 57.3 to get degrees.',s:'3000 ÷ 1,000,000 = 0.003 rad × 57.3 = 0.172°.'},
  {q:'Using Sun radius ≈ 110 Earth radii, how many Earths would fit inside the Sun by volume (approximately)?',a:1331000,tol:.03,u:'Earths',h:'Volume scales as radius cubed.',s:'110³ = 1,331,000 ≈ 1.3 million.'}
 ];
-D.numq=function(root){
-  NUMQ.forEach((it,i)=>{
+D.numq=function(root,d){
+  (d&&d.dataset.set==='2'?DS.NUMQ2:NUMQ).forEach((it,i)=>{
     const card=el('div','q');card.appendChild(el('p','',`${i+1}. ${it.q}`));
     const row=el('div','ctl');const inp=el('input');inp.type='number';inp.step='any';inp.setAttribute('aria-label','Your answer '+(i+1));
     const chk=el('button','btn','Check');chk.type='button';const sol=el('button','btn','Show solution');sol.type='button';
@@ -3457,6 +3583,344 @@ DS.QZ.test1=[
 {q:'Retrograde motion of a planet means it moves…',o:['faster than usual west to east','east to west among the stars for a while','toward the Sun','out of the ecliptic'],a:1,w:'It reverses its usual west-to-east drift for a while.'},
 {q:'Magnification of a telescope is…',o:['aperture ÷ eyepiece','the ratio of the angular size of the image to that of the object','how far you can see','the brightness gain'],a:1,w:'Angular size through the telescope ÷ angular size with the naked eye.'}
 ];
+
+/* ===== Added: applied what-if trainer, flashcards, numeric drills round 2, readiness tracker ===== */
+(function(){
+const {D,el}=DS;
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+/* ch: chapter tag; q: question; i: the core idea from the notes you must apply; a: model answer; t: optional trap */
+const WI=[
+/* ---- Chapters 5 to 7 (Assignment 2 territory) ---- */
+{ch:'5-7',q:`The spectrum of star R peaks in the red; the spectrum of star B peaks in the blue. Which is hotter? Can you tell which one gives out more energy per second?`,
+ i:`Black-body spectrum depends only on surface temperature (Ch 5). Luminosity depends on temperature <b>and</b> surface area.`,
+ a:`B is hotter: the peak moves from red to yellow to blue as the temperature rises. You <b>cannot</b> tell which is more luminous from colour alone. Hotter gas gives more energy per unit area, but a cool red star with a huge surface can still out-shine a small hot one (this is exactly what a red giant on the H-R diagram is, Ch 12).`,
+ t:`“Blue, so it is brighter” loses the marks. Colour → temperature only.`},
+{ch:'5-7',q:`A hydrogen line that is at 656.3 nm in the laboratory is observed at 656.0 nm in a star’s spectrum. Is the star approaching or receding, and how fast?`,
+ i:`Doppler effect (Ch 5): (observed − original) ÷ original = v ÷ c, with v positive for a source moving away.`,
+ a:`The wavelength is shorter (blue-shifted), so the star is <b>approaching</b>. Δλ/λ = 0.3 ÷ 656.3 = 4.6 × 10⁻⁴, so v = 4.6 × 10⁻⁴ × 3 × 10⁵ km/s ≈ <b>140 km/s</b> toward us.`,
+ t:`Doppler only measures motion along the line of sight. Sideways motion across the sky (proper motion, Ch 12) gives no shift.`},
+{ch:'5-7',q:`Why must a gamma-ray telescope be put in space, while an optical telescope can sit on a mountain?`,
+ i:`Atmospheric opacity (Ch 5): our air is opaque to gamma rays but transparent to visible light.`,
+ a:`The Earth’s atmosphere absorbs gamma rays (and most X-rays and ultraviolet), so they never reach the ground. Visible light passes through, so ground telescopes work; a mountain top just puts the telescope above some of the air, cloud and haze.`},
+{ch:'5-7',q:`If the Moon were twice as far from the Earth, what would happen to (a) the tides and (b) total solar eclipses?`,
+ i:`Tides come from the <i>difference</i> of the Moon’s pull across the Earth (Ch 6). Angular size = diameter ÷ distance (Ch 1, Ch 7).`,
+ a:`(a) Still two high tides a day, but much smaller: the difference between the pull on the near and far sides gets weaker as the Moon moves away. The Sun’s tide would become relatively more important. (b) The Moon’s angular size would halve to about 0.25°, smaller than the Sun’s 0.5°, so it could never cover the Sun: only <b>annular</b> (and partial) eclipses, no total ones. The notes say this will really happen in the far future because tidal friction makes the Moon recede.`},
+{ch:'5-7',q:`Why are the high tides highest at new moon and full moon, but lower at first quarter?`,
+ i:`Both the Sun and the Moon raise tidal bulges (Ch 6). They add up when the three bodies are in a line.`,
+ a:`At new and full moon the Sun, Earth and Moon are in a straight line, so the Sun’s bulges and the Moon’s bulges are in the same place and reinforce each other: higher high tides. At first and third quarter the Sun is at 90° to the Moon, so the Sun’s bulges fall where the Moon’s low tides are and partly cancel them.`,
+ t:`Same logic as Assignment 2 Q3: count bulges, not moons.`},
+{ch:'5-7',q:`An astronaut stands on the near side of the Moon during a total lunar eclipse. What does the astronaut see? What if the Moon is only in the penumbra?`,
+ i:`Swap the roles of Earth and Moon (Ch 7). Umbra = Sun totally blocked; penumbra = partly blocked.`,
+ a:`In the umbra the Earth completely blocks the Sun: the astronaut sees a <b>total solar eclipse by the Earth</b>. In the penumbra only part of the Sun is covered: a <b>partial solar eclipse</b> (the notes say exactly this). From Earth we then usually say there is no lunar eclipse.`},
+{ch:'5-7',q:`There is a full moon every 29.5 days. Why don’t we get a lunar eclipse every month?`,
+ i:`The Moon’s orbit is tilted to the Earth’s orbital plane (Ch 7).`,
+ a:`The plane of the Moon’s orbit does not coincide with the plane of the Earth’s orbit. At most full moons the Moon passes a little north or south of the Earth’s shadow and misses it. An eclipse happens only when full moon falls near the line where the two planes cross. The same reason explains why there is not a solar eclipse every new moon.`},
+{ch:'5-7',q:`From the Moon’s near side, does the Earth rise and set? When we see a new moon, what does the Earth look like from the Moon?`,
+ i:`Synchronous rotation (Ch 7): the Moon spins once per orbit. Phases come from the Sun–Earth–Moon geometry.`,
+ a:`Because the Moon always keeps the same face to us, the Earth hangs almost fixed in the near-side sky: it does not rise or set (it is never seen from the far side). At new moon the Moon is between us and the Sun, so from the Moon the Earth’s sunlit side faces the astronaut: a <b>full Earth</b>. The phases are complementary.`,
+ t:`Compare Charon (Ch 10): Pluto is also locked, so Charon is fixed in Pluto’s sky too.`},
+/* ---- Chapter 8 ---- */
+{ch:'8',q:`Suppose Venus lost almost all its atmosphere, so it became like Mercury’s. Predict what happens to (a) its average surface temperature, (b) the day–night difference and (c) the number of craters.`,
+ i:`Thick CO₂ = greenhouse effect + heat spread evenly + protection from meteoroids (Ch 8).`,
+ a:`(a) Much cooler on average: no greenhouse effect to trap the heat. (b) A huge day–night difference, like Mercury’s: no blanket to store and spread heat. Venus’s solar day is about 117 Earth days, so each night lasts about two months: the night side would get extremely cold. (c) Many more new craters: meteoroids would no longer be slowed and burnt up by the atmosphere.`,
+ t:`Answer all three parts with a reason each. “It gets colder” alone is one mark of three.`},
+{ch:'8',q:`Venus and Mars both have atmospheres of about 90–95% CO₂. Why is Venus about 500 °C while Mars is −100 °C to −10 °C?`,
+ i:`The greenhouse effect depends on how much gas there is, not just which gas (Ch 8).`,
+ a:`Venus’s atmosphere is enormously thick (pressure 90 times Earth’s), so its CO₂ traps a lot of heat: a runaway greenhouse effect. Mars’s atmosphere is very thin (1% of Earth’s pressure), too thin to trap heat, and Mars is also farther from the Sun. Same gas, very different amount, very different result.`},
+{ch:'8',q:`Rank Mercury, Venus, Earth and Mars from most to fewest craters on their surfaces, and justify.`,
+ i:`Craters are kept unless something protects the surface (atmosphere) or erases the scars (weather, oceans, continental drift) (Ch 7, Ch 8).`,
+ a:`<b>Mercury</b> most: almost no atmosphere and no activity, so every impact stays (like the Moon, which the notes call “dead”). <b>Mars</b> next: thin atmosphere and no continental drift, so many old craters survive. <b>Venus</b> and <b>Earth</b> fewest: Venus’s thick atmosphere protects its surface (the notes’ reason); Earth has an atmosphere plus weather, oceans and continental drift that erase old craters.`,
+ t:`The notes compare Mercury and Venus directly. For the rest, give the reason, not just the order.`},
+{ch:'8',q:`On Venus, where does the Sun rise, and roughly how long is it from one sunrise to the next?`,
+ i:`Retrograde spin (Ch 8) + sidereal vs solar day (Ch 2, Assignment 1 Q7).`,
+ a:`Venus spins backwards (opposite to its orbit), so the Sun rises in the <b>west</b> and sets in the east. With opposite spin the Sun “comes back early”: 1/solar = 1/243 + 1/224 → solar day ≈ <b>117 Earth days</b>, shorter than its 243-day spin.`},
+{ch:'8',q:`A Martian year is 687 Earth days and its tilt is 24°. Compare the length of each Martian season with Earth’s.`,
+ i:`Tilt gives seasons; season length = a quarter of the year (Ch 8, Assignment 2 Q5 official solution).`,
+ a:`Mars has four seasons like Earth (similar tilt), but its year is 687 ÷ 365 ≈ 1.9 Earth years, so each season lasts about <b>twice as long</b> as ours (about 5.6 months instead of 3). The official Assignment 2 solution uses exactly this as a “difference”.`},
+{ch:'8',q:`If Mars’s axis were not tilted at all, would it have seasons? Would it still have polar ice caps?`,
+ i:`Tilt makes seasons. Without tilt the Sun stays over the equator all year (Ch 2, Ch 8).`,
+ a:`No seasons: the Sun would be over the equator every day of the year, like on Venus. The poles would still be the coldest places (the Sun would always be on their horizon), so polar ice caps could still exist, but they would not grow and shrink with the seasons.`},
+{ch:'8',q:`Why does Mars have the largest volcano in the solar system but no long mountain ranges?`,
+ i:`Absence of continental drift (Ch 8).`,
+ a:`On Mars the crust does not drift, so lava from a hot spot keeps piling up in the same place for a very long time, building giants such as Olympus Mons (25 km high, 600 km across). Long mountain ranges on Earth form where drifting plates collide; with no drift, Mars has none.`},
+/* ---- Chapter 9 ---- */
+{ch:'9',q:`Uranus has the same average density as Jupiter (1.3), yet Jupiter has a metallic hydrogen core and Uranus a rocky one. Suggest why Uranus cannot make metallic hydrogen.`,
+ i:`Metallic hydrogen needs the great pressure produced by a great mass (Ch 9).`,
+ a:`The notes say Jupiter’s core is metallic hydrogen <i>because of the great pressure</i>. That pressure comes from the weight of the gas above, so it depends on the planet’s mass. Jupiter has 318 Earth masses but Uranus only 14.5, so the pressure inside Uranus is far too low to squeeze hydrogen into a metal. Uranus’s density instead comes from rock in its core.`},
+{ch:'9',q:`Standing at Uranus’s north pole, describe the Sun over one Uranian year (84 Earth years).`,
+ i:`Uranus’s axis lies almost in its orbital plane (Ch 9). Same thinking as Test 1 Q1 (the sky at a pole).`,
+ a:`For about a quarter of the orbit the north pole points almost at the Sun: the Sun circles high in the sky and never sets, for many years. Around the “equinox” positions the Sun is near the horizon and day–night cycles occur. Then the pole points away from the Sun and there is continuous night for many years. Roughly 42 years of daylight and 42 of darkness: seasons are extreme.`,
+ t:`Say what stays constant and what changes, as the Test 1 solution demanded for the south pole.`},
+{ch:'9',q:`Jupiter is a ball of hydrogen and helium held together by its own gravity, and it radiates more energy than it receives. Is it a star? Is it a brown dwarf?`,
+ i:`A star must be massive enough for nuclear reactions in its core (Ch 12, Ch 14).`,
+ a:`Not a star: it passes “gas ball held by its own gravity” but fails “massive enough for nuclear fusion”. Its extra energy comes from gravitational collapse of its inner parts, not fusion. Fusion needs about 0.1 solar mass; Jupiter is about 0.001. It is not a brown dwarf either: a brown dwarf is a protostar slightly more massive than a planet; Jupiter is a planet.`},
+{ch:'9',q:`Saturn’s rings are hundreds of thousands of km wide but only about 1 km thick. What would you see when Earth lies exactly in the ring plane?`,
+ i:`The rings are extremely thin ringlets of dust and ice (Ch 9).`,
+ a:`Edge-on, a layer about 1 km thick across a planet more than 100,000 km wide is far too thin to see from Earth: the rings almost disappear for a short time. (The ring particles are mm to m in size and spread out flat.)`},
+{ch:'9',q:`From Saturn, a total solar eclipse by Titan lasts much longer than a total solar eclipse on Earth. Why?`,
+ i:`Compare angular sizes (Assignment 2 Q6): Titan ≈ 0.25°, Sun from Saturn ≈ 0.056°.`,
+ a:`Titan looks about 4 times wider than the Sun from Saturn, so it can keep covering the Sun while it moves a long way across it. On Earth the Moon (≈ 0.5°) is only just big enough to cover the Sun (≈ 0.5°), so totality lasts only a couple of minutes (the notes say about two minutes), and sometimes the eclipse is only annular.`},
+{ch:'9',q:`Why is Jupiter flattened at the poles but the Earth hardly at all?`,
+ i:`Fast spin makes the equator bulge (Ch 9).`,
+ a:`Jupiter spins once in about 10 hours although it is 11 times wider than Earth, so its equator moves extremely fast, and it is made of gas that can deform easily. The fast spin flings the equator outward and flattens the poles. Earth spins once in 24 hours, is small and is solid, so the effect is tiny.`},
+/* ---- Chapter 10 ---- */
+{ch:'10',q:`From 1979 to 1999 Pluto was closer to the Sun than Neptune. Why don’t they collide?`,
+ i:`Pluto’s orbit is inclined 17.2° to the ecliptic, and only part of it lies inside Neptune’s (Ch 10).`,
+ a:`The two orbits only <i>look</i> crossed when drawn flat. Pluto’s orbit is tilted 17.2°, so where it comes inside Neptune’s orbit it is well above or below Neptune’s plane: the two paths never actually meet in space.`},
+{ch:'10',q:`You stand on Pluto. On one side of Pluto you never see Charon. On the other side, does Charon rise and set?`,
+ i:`Charon is a synchronous satellite: its orbit period equals Pluto’s rotation period (Ch 10).`,
+ a:`No. Pluto turns exactly as fast as Charon goes round, so Charon stays over the same spot of Pluto’s surface. From that half, Charon hangs at a fixed place in the sky forever, never rising or setting; from the other half it is always below the horizon. It is the only natural synchronous satellite in the solar system.`,
+ t:`Our Moon is synchronous in rotation, but the Earth is not locked to it, so the Moon rises and sets for us.`},
+{ch:'10',q:`A new object orbits the Sun, is round, is 2000 km across and shares its orbit with many Kuiper belt objects. Classify it. What if the same body orbited Neptune instead?`,
+ i:`The four dwarf-planet criteria (Assignment 2 Q7).`,
+ a:`Orbits the Sun ✓, round (own gravity) ✓, has not cleared its neighbourhood ✓, not a satellite ✓ → <b>dwarf planet</b>. If it orbited Neptune it would fail “not a satellite”: it would be a moon (satellite), even though it is round. (Ganymede and Titan are bigger than Mercury but are moons.)`},
+{ch:'10',q:`Where in its orbit is a comet’s tail longest, and which way does it point at the farthest point (aphelion)?`,
+ i:`The coma and tail come from ice vaporised by the Sun’s heat and pushed by the solar wind and radiation pressure (Ch 10).`,
+ a:`The tail is longest near the Sun (perihelion), where heating vaporises the most gas and the solar wind is strongest. Far away at aphelion there is practically no coma or tail, just a frozen dark nucleus. Whenever there is a tail it points away from the Sun.`},
+{ch:'10',q:`Asteroids show up as trails in a long-exposure photo, but Kuiper belt objects are found by comparing photos taken days or weeks apart. Why the difference?`,
+ i:`Distance → dimness and slow apparent motion (Ch 10).`,
+ a:`Asteroids are fairly close (between Mars and Jupiter), so in one long exposure they move enough against the stars to make a trail. Kuiper belt objects are so far away that they are very dim and move very slowly against the stars, so no trail forms; astronomers spot them as dots that have shifted between photos taken days or weeks apart.`},
+{ch:'10',q:`A meteoroid enters the atmosphere at 30 km/s. Why does it glow, and what decides whether it becomes a meteorite?`,
+ i:`Meteoroid → meteor → meteorite (Ch 10). The heating is mainly compression of the air in front.`,
+ a:`At tens of km/s the air in front is compressed and heated (the notes stress it is compression rather than friction), so the meteoroid and the air around it glow: a meteor. Most are grain-sized and burn up completely. Only a massive one has material left over to hit the ground: a meteorite (a large one can make a crater).`},
+/* ---- Chapter 11 ---- */
+{ch:'11',q:`If sunspots were at the same temperature as the rest of the photosphere, could we still see them in an ordinary photo? Could we detect them some other way?`,
+ i:`Sunspots look dark only because they are cooler (4000 K vs 6000 K); they have strong magnetic fields detected in the spectrum (Ch 11).`,
+ a:`Not in an ordinary photo: they are dark only by contrast, because cooler gas gives less light per area. At the same temperature they would shine just as brightly as their surroundings. We could still find them by spectrum analysis, which the notes say reveals their magnetic field (about 1000 times the Sun’s average).`},
+{ch:'11',q:`During an annular solar eclipse, can you see the corona? Why is it seen during a total one?`,
+ i:`The corona and chromosphere are much fainter than the photosphere (Ch 11). Annular = a ring of Sun remains (Ch 7).`,
+ a:`No: in an annular eclipse a bright ring of photosphere is still visible, and it outshines the faint corona completely. Only in a total eclipse is the whole photosphere covered, so the sky darkens and the much dimmer chromosphere and corona become visible.`,
+ t:`A two-chapter question: name both facts (faint corona, ring of photosphere left).`},
+{ch:'11',q:`Why does nuclear fusion happen only in the Sun’s core and not in the convective zone?`,
+ i:`Fusion needs high temperature (to overcome the electric repulsion of protons) and high density (to make collisions likely) (Ch 11).`,
+ a:`Protons repel each other electrically. Only at very high temperature (over 10⁷ K) do they move fast enough to get close, and only at very high density do they collide often enough. Those conditions exist only in the core; the outer layers are far cooler and less dense.`},
+{ch:'11',q:`Suppose fusion in the Sun’s core suddenly became faster. What would happen? What if it stopped?`,
+ i:`Stability = outward pressure (gas + radiation) balancing inward gravity, and the pressure comes from energy made in the core (Ch 11).`,
+ a:`Faster fusion → more energy → higher gas and radiation pressure → pressure beats gravity → the Sun expands. If fusion stopped, the pressure would no longer be produced, gravity would win and the Sun would contract (collapse). The notes: “if no energy is produced, a star will collapse.”`},
+{ch:'11',q:`Why are aurorae seen more often in some years than others?`,
+ i:`Sunspot cycle (11 years) → flares and prominences → solar wind → aurora (Ch 11).`,
+ a:`The number of sunspots rises and falls with an 11-year cycle. Flares, which are linked to sunspots and the magnetic field, give strong bursts of solar wind. Strong solar wind produces aurorae on Earth, so aurorae are most common around sunspot maximum.`},
+{ch:'11',q:`A friend wants to watch the Sun through a telescope with a small dark filter screwed onto the eyepiece, or else through three pairs of sunglasses. Advise them.`,
+ i:`Safe: projection or a proper solar filter in front of the telescope. Unsafe: the list in Ch 11.`,
+ a:`Both are on the notes’ unsafe list. A small filter at the eyepiece receives all the light concentrated by the telescope and can crack; sunglasses do not block enough. Safe ways: project the image from the telescope onto a screen and look at the screen, or use a specially designed solar filter over the front of the telescope. If in doubt, don’t.`},
+/* ---- Chapter 12 ---- */
+{ch:'12',q:`Stars A and B have the same apparent magnitude. A’s parallax is 0.1″, B’s is 0.01″. Which is more luminous, and by how many times?`,
+ i:`d = 1/p; same apparent brightness + inverse-square law (Ch 12).`,
+ a:`A is 10 pc away, B is 100 pc away: B is 10 times farther. To look equally bright from 10 times farther, B must give out 10² = <b>100 times</b> more energy. B is more luminous, by 5 magnitudes in absolute magnitude.`},
+{ch:'12',q:`If astronomers measured parallax from Mars (orbit radius 1.52 AU) instead of from Earth, would the parallax angle of a given star be bigger or smaller? Would the parsec change?`,
+ i:`Parallax uses the orbit as the baseline; the parsec is defined with a baseline of 1 AU (Ch 12).`,
+ a:`Bigger, by a factor 1.52: a longer baseline makes the star appear to shift more, so parallax would work for more distant stars. The parsec would not change: it is defined as the distance at which a 1 AU baseline gives a parallax of 1″. You would have to divide the Mars angle by 1.52 before using d = 1/p.`},
+{ch:'12',q:`A star moves straight toward us. What is its proper motion? How could we still measure its motion?`,
+ i:`Proper motion depends on the angle between the motion and the line of sight (Ch 12). Doppler measures motion along the line of sight (Ch 5).`,
+ a:`Its proper motion is zero: it does not move across the sky at all. But its spectral lines are blue-shifted, so the Doppler effect gives its speed toward us.`},
+{ch:'12',q:`What is the Sun’s apparent magnitude seen from Saturn (9.5 AU)? Would it still be the brightest object in Saturn’s sky?`,
+ i:`Inverse-square law: Δm = 5 log₁₀(d₂/d₁) (Ch 12).`,
+ a:`Δm = 5 log₁₀ 9.5 = 4.9, so m ≈ −26.8 + 4.9 = <b>−21.9</b>. That is 90 times fainter than from Earth but still enormously brighter than any star (Sirius is about −1.5), so yes.`},
+{ch:'12',q:`A red star and a blue star have the same luminosity. Which is larger? Where are they on the H-R diagram?`,
+ i:`Luminosity depends on temperature and surface area (Ch 5, Ch 12).`,
+ a:`The red star is cooler, so each square metre gives out less energy. To have the same total, it must have a much larger surface: the red star is bigger. On the H-R diagram they are at the same height (same luminosity); the blue star to the left, the red one to the right. If both are bright, the red one is in the giant region (upper right).`},
+{ch:'12',q:`A star is 32.6 light-years away. Without any calculation, what is the relation between its apparent and absolute magnitudes?`,
+ i:`Absolute magnitude = apparent magnitude at 10 pc ≈ 32.6 ly (Ch 12).`,
+ a:`32.6 ly is 10 pc, the standard distance, so m = M exactly.`},
+{ch:'12',q:`Why can’t ground-based parallax measure the distance to a star 1000 pc away?`,
+ i:`p (arcsec) = 1/d (pc) (Ch 12).`,
+ a:`Its parallax would be only 1/1000 = 0.001″, far too small to measure through the blurring atmosphere. That is why Gaia measures from space, and why other methods (Cepheids, the distance ladder) are needed for greater distances.`},
+/* ---- Chapter 13 ---- */
+{ch:'13',q:`A binary star’s orbit is seen exactly face-on from Earth. Can it be an eclipsing binary? A spectroscopic binary? What could it still be?`,
+ i:`Eclipses need an edge-on view (inclination). Doppler only measures motion along the line of sight (Ch 5, Ch 13).`,
+ a:`Not eclipsing: seen face-on, one star never passes in front of the other. Not spectroscopic: the stars move across our line of sight, never toward or away from us, so there is no Doppler shift. It could still be a <b>visual</b> binary (if we can resolve both stars) or an <b>astrometric</b> binary (if we see one star wobble in a wavy path).`,
+ t:`The best answers name both detection methods that fail and say why, then give what is left.`},
+{ch:'13',q:`Two stars in the Pleiades have apparent magnitudes 8.0 and 13.0. Which is more luminous and by how much? Could you say the same for two random stars in the sky?`,
+ i:`Cluster stars are at about the same distance, so Δm = ΔM (Ch 13).`,
+ a:`The m = 8.0 star is 5 magnitudes brighter, so <b>100 times</b> more luminous, because both are at the same distance. For two random stars you could not say: one might look brighter only because it is nearer. You would need their distances first.`},
+{ch:'13',q:`Suppose all parallax distances to nearby Cepheids turned out to be 10% too small. What would happen to the distances of far galaxies measured with Cepheids?`,
+ i:`The cosmic distance ladder: near, accurate methods calibrate the methods for greater distances (Ch 13).`,
+ a:`The period–luminosity relation was calibrated using those parallax distances. Too-small distances → the Cepheids were thought to be less luminous than they are → every distance found with Cepheids would also be too small by about 10%. Every rung above Cepheids is calibrated by Cepheids, so the error passes up the whole ladder.`},
+{ch:'13',q:`An open cluster contains many bright blue stars; a globular cluster contains none. Explain.`,
+ i:`Open clusters are young, globular clusters old (Ch 13). Massive (hot, blue) stars live shortest (Ch 14).`,
+ a:`Bright blue stars are hot, massive O and B stars, which use up their core fuel in only about a million years. An open cluster is young, so its massive stars are still alive. A globular cluster is old: its massive stars died long ago, leaving only the long-lived, lower-mass, cooler stars.`},
+{ch:'13',q:`A star’s brightness dips by the same amount every 3.2 days, and between dips it is perfectly steady. Is it more likely a pulsating variable or an eclipsing variable? What would a Cepheid’s light curve look like instead?`,
+ i:`Eclipsing = geometry; pulsating = the star swells and shrinks (Ch 13).`,
+ a:`Flat between short, regular dips is the signature of an <b>eclipsing</b> binary: one star passes in front of the other, while the stars themselves are steady. A Cepheid changes brightness all the time, rising and falling smoothly through its cycle, because the star itself is continually expanding and contracting.`},
+{ch:'13',q:`A nebula next to a hot bright star glows red. Another nebula, far from any star, cannot be seen glowing at all. Explain both.`,
+ i:`A nebula cannot produce energy by itself; it can scatter starlight, or its gas can be ionised by bright stars and emit red light (Ch 13).`,
+ a:`The first nebula’s gas is ionised by the nearby bright star and gives out red light. The second has no star to light it, and a nebula makes no energy of its own, so it does not glow (its dust may even block the light of stars behind it).`},
+/* ---- Chapter 14 ---- */
+{ch:'14',q:`Three clouds collapse, forming objects of 0.05, 1 and 5 solar masses. What does each become, and how does each get its energy on the main sequence?`,
+ i:`0.1 solar mass is the lower limit for fusion; 1.1 solar masses divides p-p chain from CNO cycle (Ch 14).`,
+ a:`0.05: below 0.1 solar mass → a <b>brown dwarf</b>, never a star, very dim. 1: a star like the Sun, <b>p-p chain</b>, radiative core and convective shell. 5: above 1.1 → <b>CNO cycle</b> (carbon as catalyst), convective core and radiative shell, hotter, much more luminous and much shorter-lived.`},
+{ch:'14',q:`A low-mass protostar contracts and its surface gets hotter, yet it becomes less luminous. How?`,
+ i:`Luminosity depends on temperature and surface area (Ch 5); the notes’ H-R track (Ch 14).`,
+ a:`Hotter means more energy per square metre, but the star’s size shrinks much faster, so its total surface area drops a lot. For a low-mass protostar the loss of area wins, so total luminosity falls: on the H-R diagram it moves left (hotter) and down (dimmer).`},
+{ch:'14',q:`Put these in order of main-sequence lifetime, shortest first: 0.5, 1, 10 and 30 solar masses. Explain the order.`,
+ i:`Mass decides everything: higher mass → faster reactions (Ch 14).`,
+ a:`30, 10, 1, 0.5 solar masses. A more massive star has more fuel, but its core is hotter and denser and its reactions (CNO cycle) much faster, so it uses the fuel up far sooner: the most massive in about a million years, the least massive over tens of billions of years.`},
+{ch:'14',q:`A supernova explodes near a quiet interstellar cloud. Why might stars start forming there?`,
+ i:`Undisturbed clouds don’t change; a disturbance raises the density and gravity takes over (Ch 14).`,
+ a:`The supernova’s shock wave compresses part of the cloud. The slight increase in density lets the cloud’s own gravity win, so that region contracts into protostars. (Other triggers in the notes: galaxy collisions, density waves, the birth of a nearby star.)`},
+{ch:'14',q:`Compare where the energy comes from in (a) a protostar, (b) a main-sequence star and (c) a nuclear power plant.`,
+ i:`Gravitational energy vs fusion vs fission (Ch 14).`,
+ a:`(a) Gravitational energy released as the cloud contracts (like a falling ball speeding up). (b) Nuclear <b>fusion</b>: small nuclei (hydrogen) join into a larger one (helium). (c) Nuclear <b>fission</b>: a large nucleus splits into smaller ones.`},
+{ch:'14',q:`Why do T Tauri stars look red even though they are heating up and will become stars?`,
+ i:`Violent processes give short wavelengths; gentle processes give long wavelengths (Ch 14).`,
+ a:`They are young, with a low surface temperature, and are surrounded by a huge cloud. Contraction is a gentle process, so they give out mainly long-wavelength light, infrared, and look red. They later become G, K or M main-sequence stars.`}
+];
+const CHN={'5-7':'Ch 5–7','8':'Ch 8','9':'Ch 9','10':'Ch 10','11':'Ch 11','12':'Ch 12','13':'Ch 13','14':'Ch 14'};
+D.whatif=function(root,d){
+  const fixed=d&&d.dataset.ch;let filt=fixed||'all';let list=[],idx=0;
+  const top=el('div','ctl');root.appendChild(top);
+  if(!fixed){const lab=el('label','',`<span>Chapter:</span>`);const s=el('select');s.innerHTML='<option value="all">All chapters</option>'+Object.keys(CHN).map(k=>`<option value="${k}">${CHN[k]}</option>`).join('');s.addEventListener('change',()=>{filt=s.value;build()});lab.appendChild(s);top.appendChild(lab)}
+  const cnt=el('span','muted');top.appendChild(cnt);
+  const card=el('div','q');root.appendChild(card);
+  const row=el('div','ctl');root.appendChild(row);
+  const mk=(t,f)=>{const b=el('button','btn',t);b.type='button';b.addEventListener('click',f);row.appendChild(b);return b};
+  mk('← Previous',()=>{idx=(idx-1+list.length)%list.length;show()});
+  const bi=mk('Show the core idea',()=>{ib.hidden=false});
+  const ba=mk('Show model answer',()=>{ab.hidden=false;ib.hidden=false});
+  mk('Next →',()=>{idx=(idx+1)%list.length;show()});
+  mk('Shuffle',()=>{for(let i=list.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[list[i],list[j]]=[list[j],list[i]]}idx=0;show()});
+  let ib,ab;
+  function build(){list=WI.filter(x=>filt==='all'||x.ch===filt);idx=0;show()}
+  function show(){const it=list[idx];cnt.textContent=`Question ${idx+1} of ${list.length}`;
+    card.innerHTML=`<p><span class="pill">${CHN[it.ch]}</span> <b>${it.q}</b></p><p class="cap">Write your answer (two to four sentences, with the reason) before you reveal anything.</p>`;
+    ib=el('div','box think',`<b>Core idea to apply</b><p>${it.i}</p>`);ib.hidden=true;card.appendChild(ib);
+    ab=el('div','box ok',`<b>Model answer</b><p>${it.a}</p>${it.t?`<p><b>Mark-saver:</b> ${it.t}</p>`:''}`);ab.hidden=true;card.appendChild(ab)}
+  build();
+};
+DS.WI=WI;
+
+/* ---- Flashcards ---- */
+const FC=[
+['5-7','Black-body spectrum depends on…','Only the surface temperature (not composition or shape). Peak: red (cool) → yellow → blue → ultraviolet (hot).'],
+['5-7','Colour vs luminosity of a star','Colour is set mainly by surface temperature; luminosity by surface temperature AND surface area.'],
+['5-7','Absorption vs emission lines','Low-density gas absorbs particular wavelengths from light passing through → dark absorption lines; seen from the side, the same gas shows bright emission lines. Each gas has its own set of lines.'],
+['5-7','Doppler formula','(observed λ − original λ) ÷ original λ = v ÷ c. Longer λ = red-shift = moving away.'],
+['5-7','Magnitude rule','5 magnitudes = ×100 in brightness; 1 mag ≈ ×2.51; m = −2.5 log₁₀(I/I₀). Smaller number = brighter.'],
+['5-7','Why two high tides a day?','Moon pulls near-side water most, Earth less, far-side water least → two bulges. Earth rotates under both.'],
+['5-7','Spring (highest) tides happen at…','New and full moon, when the Sun’s and Moon’s effects reinforce.'],
+['5-7','Synodic month','29.5 days, new moon to new moon. Moon’s rotation period equals it: synchronous rotation, so we see one side.'],
+['5-7','Moon basics','Distance ≈ 30 Earth diameters; radius ≈ ¼ Earth’s; mass ≈ 1/81 Earth’s; no atmosphere. Maria = solidified lava.'],
+['5-7','Why no eclipse every month?','The Moon’s orbital plane is tilted relative to the Earth’s orbital plane.'],
+['5-7','Lunar eclipse: umbra vs penumbra','Moon in umbra → total; partly in umbra → partial; only in penumbra → usually “no eclipse” (from the Moon: a partial solar eclipse).'],
+['5-7','Annular eclipse','Moon farther than average → its angular size too small to cover the Sun → ring of Sun visible.'],
+['5-7','Total solar eclipse facts','Narrow path; about two minutes; diamond ring before and after; corona becomes visible; stars and planets visible.'],
+['8','Terrestrial planets','Mercury, Venus, Earth, Mars: solid surface, small, densities 3.9–5.5.'],
+['8','Mercury’s atmosphere','Very thin: sodium + a little helium; pressure almost zero → huge day–night difference; many craters (ray systems, central mountains).'],
+['8','Venus: spin and tilt','Spins backwards (like Uranus), 243 days; axis almost perpendicular to orbit → no seasons.'],
+['8','Venus: atmosphere','Pressure 90× Earth’s; 90% CO₂, 3% N₂, some SO₂; sulphuric-acid clouds; ≈ 500 °C everywhere; fewer craters (protected).'],
+['8','Mars: atmosphere and temperature','Pressure 1% of Earth’s; 95% CO₂, 3% N₂; −100 °C to −10 °C; white (water/CO₂) and yellow (dust) clouds.'],
+['8','Mars: surface','Red = iron oxide; polar caps of CO₂ + water; Olympus Mons 25 km high, 600 km wide; canyon 5000 km long, 7 km deep; no continental drift.'],
+['8','Mars: numbers','Tilt 24°; day 25 h; year 687 days; two small irregular moons (larger radius < 13 km); diameter 0.53, mass 0.11 Earth.'],
+['8','Why Earth lost its CO₂','Dissolved in water, used in photosynthesis; these do not happen on Venus or Mars.'],
+['9','Jovian planets','Jupiter, Saturn, Uranus, Neptune: mostly gas, big, low density (0.7–1.6), fast spin, rings, many moons, magnetic fields.'],
+['9','Jupiter: core and field','Great pressure → metallic hydrogen core; its rapid rotation → strong magnetic field.'],
+['9','Jupiter radiates more than it receives because…','Gravitational collapse of its inner parts converts gravitational energy to heat.'],
+['9','Great Red Spot','Storm (typhoon), red from sulphur compounds, 3× Earth’s size, winds > 500 km/h, seen for 150+ years.'],
+['9','Galilean moons','Io (volcanic, young surface), Europa, Ganymede (largest moon in the solar system), Callisto; water under ice of Europa and Callisto.'],
+['9','Saturn’s rings','Thin ringlets ~1 km thick; dust and ice mm–m; formed by tidal force tearing satellite(s); Cassini division; shepherd satellites.'],
+['9','Titan','Nitrogen atmosphere; Huygens probe landed (Cassini-Huygens 2004–05); rivers and lakes of organic material.'],
+['9','Uranus','Axis almost in its orbital plane (“rolling”); blue from methane; rocky core; calm atmosphere.'],
+['9','Neptune','Rocky core, rings, moons, magnetic field; Great Dark Spot lasted only about 2 years.'],
+['10','Pluto numbers','Diameter ≈ 2370 km (Moon 3475 km); mass < 1% Earth; density ≈ 2.3; orbit tilted 17.2°, partly inside Neptune’s (1979–1999).'],
+['10','Charon','Diameter ≈ 1200 km (over half of Pluto’s); synchronous: orbit period = Pluto’s rotation period; the only natural synchronous satellite.'],
+['10','Dwarf planet criteria','(1) Orbits the Sun; (2) round from own gravity; (3) has NOT cleared its orbit; (4) not a satellite.'],
+['10','Comet structure','“Dirty snowball” nucleus < 10 km → coma near the Sun → tail pushed by solar wind and radiation pressure, always pointing away from the Sun.'],
+['10','Asteroids','Minor planets; mostly between Mars and Jupiter; 30,000+; largest ≈ 1000 km; mostly not round (Gaspra; Ida with moon Dactyl).'],
+['10','Kuiper belt objects','Beyond Pluto, mostly < 50 AU; first found 1992; Eris 2336 km (most massive), Orcus 1600 km, Sedna 76–900 AU.'],
+['10','Meteoroid / meteor / meteorite','In space / glowing streak in air (compression heating) / the piece that reaches the ground.'],
+['11','Sun size and mass','Radius ≈ 700,000 km ≈ 110 Earth radii; mass ≈ 2 × 10³⁰ kg ≈ 3.3 × 10⁵ Earths; ≈ 70% hydrogen by mass.'],
+['11','Sun layers and temperatures','Core > 10⁷ K → radiative zone → convective zone → photosphere 6000 K (500 km) → chromosphere 10⁵ K (2000 km, spicules) → corona 10⁶ K.'],
+['11','Granulation','Hot gas rises, cools, sinks; granules ≈ 1/10 Earth’s size, last ≈ 20 minutes.'],
+['11','Sunspots','4000 K vs 6000 K; strong field (1000× average); pairs of opposite polarity; days to 3 weeks; 11-year cycle; butterfly diagram (high → low latitude).'],
+['11','p-p chain','4 ¹H → ⁴He + photons + others (neutrinos). Needs > 10⁷ K and high density.'],
+['11','Energy transport','Radiative zone: photon travels ≲ 1 cm before absorption; ten million years to reach outer part. Outer part: convection.'],
+['11','What keeps the Sun stable','Gas pressure + radiation pressure (outward) balance gravity (inward). No energy → collapse.'],
+['11','Safe solar viewing','Projection onto a screen, or a proper solar filter in front of the telescope. Never sunglasses, film, smoked glass, eyepiece filter, reflections.'],
+['12','Definition of a star','Cloud of gas bound by its own gravity, massive enough for nuclear reactions in its core.'],
+['12','Absolute magnitude','Apparent magnitude at 10 pc (≈ 32.6 ly). Sun: m = −26.8, M = 4.8. Distance modulus: m − M = 5 log₁₀(d/10 pc).'],
+['12','Inverse-square law','I × d² = constant. Double distance → ¼ intensity → +1.5 mag.'],
+['12','Parallax and parsec','d (pc) = 1/p (″); measured from photos six months apart; 1 pc ≈ 3.26 ly. Gaia ≈ 1 billion stars.'],
+['12','Proper motion depends on…','(1) the star’s real speed, (2) its distance, (3) the angle between its motion and our line of sight. Unit: angle per year.'],
+['12','H-R diagram','Temperature (spectral type OBAFGKM, O on the left) vs luminosity/absolute magnitude. Main sequence diagonal; giants upper right; dwarfs lower left.'],
+['13','Five binary types','Visual, spectroscopic (Doppler), eclipsing (variable), contact (exchange material), astrometric (wavy path; Sirius’s companion). Optical double = not bound (Mizar & Alcor).'],
+['13','Why study binaries?','Their orbital periods give masses and sizes of the stars, which are very hard to get for single stars. > 50% of stars are in binary/multiple systems.'],
+['13','Three variable types','Eclipsing (geometry), pulsating (star expands and contracts; Cepheids), eruptive (novae in binaries, supernovae).'],
+['13','Cepheids','Period few days to months; longer period = more luminous → M → compare with m → distance. Calibrated with parallax (Leavitt). Foundation of the distance ladder.'],
+['13','Open vs globular cluster','Open: few hundred, young, irregular, < 100 ly (M45). Globular: > 10,000, old, concentrated, ~100 ly (M80). Same age and distance within a cluster.'],
+['13','Nebula numbers','> 1000 atoms/cm³ vs 1 in space and 10¹⁹ in air; ~100 ly across; gas and dust; M42; glow red when ionised; birthplaces of stars.'],
+['14','Main sequence share of life','About 90% of a star’s lifetime.'],
+['14','Interstellar cloud size','Up to thousands of ly across, 10 to 1000 solar masses; mostly hydrogen; triggers: galaxy collisions, density waves, supernova shocks, nearby star birth.'],
+['14','Protostar and fast formation','No fusion yet (not a star). 10–30 solar masses shrink to solar-system size in ~10,000 years → O and B stars. Jets and accretion disks last ~100,000 years.'],
+['14','Brown dwarf and minimum star mass','Below about 0.1 solar mass → brown dwarf, very dim; at or above → fusion starts, a star is born.'],
+['14','Time to reach the main sequence','About 0.1 to 100 million years; then stays for millions to billions of years.'],
+['14','p-p vs CNO split','< 1.1 solar masses: p-p chain, core < 15 million K, radiative core + convective shell. > 1.1: CNO cycle, convective core + radiative shell.'],
+['14','Lifetimes','Most massive: about one million years. Least massive: up to tens of billions of years.']
+];
+D.flash=function(root){
+  const KEY='phys-flash-known';let known=new Set(store.get(KEY,[]));let filt='all',deck=[],pos=0,flipped=false;
+  const top=el('div','ctl');root.appendChild(top);
+  const lab=el('label','','<span>Deck:</span>');const s=el('select');
+  s.innerHTML='<option value="all">All</option><option value="todo">Not yet known</option>'+Object.keys(CHN).map(k=>`<option value="${k}">${CHN[k]}</option>`).join('');
+  s.addEventListener('change',()=>{filt=s.value;build()});lab.appendChild(s);top.appendChild(lab);
+  const prog=el('span','muted');top.appendChild(prog);
+  const card=el('button','fcard');card.type='button';card.setAttribute('aria-live','polite');root.appendChild(card);
+  card.addEventListener('click',()=>{flipped=!flipped;show()});
+  const row=el('div','ctl');root.appendChild(row);
+  const mk=(t,f)=>{const b=el('button','btn',t);b.type='button';b.addEventListener('click',f);row.appendChild(b);return b};
+  mk('Again (not yet)',()=>{const c=deck[pos];if(c){known.delete(c.id);save()}next()});
+  mk('I knew it ✓',()=>{const c=deck[pos];if(c){known.add(c.id);save()}next()});
+  mk('Shuffle',()=>{for(let i=deck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[deck[i],deck[j]]=[deck[j],deck[i]]}pos=0;flipped=false;show()});
+  mk('Reset progress',()=>{known=new Set();save();build()});
+  function save(){store.set(KEY,[...known])}
+  function next(){if(filt==='todo'){build();return}pos=(pos+1)%Math.max(1,deck.length);flipped=false;show()}
+  function build(){deck=FC.map((c,i)=>({id:i,ch:c[0],f:c[1],b:c[2]})).filter(c=>filt==='all'||(filt==='todo'?!known.has(c.id):c.ch===filt));pos=0;flipped=false;show()}
+  function show(){
+    const tot=FC.length;prog.textContent=`Known: ${known.size} / ${tot}`;
+    if(!deck.length){card.innerHTML='<span class="fside">All done</span><span class="ftext">Every card in this deck is marked as known. Pick another deck or reset.</span>';return}
+    const c=deck[pos];card.classList.toggle('back',flipped);
+    card.innerHTML=`<span class="fside">${CHN[c.ch]} · card ${pos+1} of ${deck.length} · ${flipped?'answer':'tap to flip'}</span><span class="ftext">${flipped?c.b:c.f}</span>${known.has(c.id)?'<span class="fknown">known ✓</span>':''}`;
+  }
+  build();
+};
+
+/* ---- Numeric drills, round 2 (Ch 5 to 14, applied) ---- */
+DS.NUMQ2=[
+ {q:'A spectral line at 656.3 nm in the lab is seen at 657.0 nm in a star. How fast is the star moving, in km/s? (c = 3 × 10⁵ km/s)',a:320,tol:.03,u:'km/s',h:'Δλ/λ = v/c. Longer wavelength means moving away.',s:'Δλ = 0.7 nm; v = 3×10⁵ × 0.7/656.3 = 320 km/s, moving away (red-shift).'},
+ {q:'What is the Sun’s apparent magnitude seen from Saturn, 9.5 AU from the Sun? (From Earth: −26.8)',a:-21.9,tol:.01,u:'',h:'Δm = 5 log₁₀(d₂/d₁), and farther means a larger (less negative) magnitude.',s:'Δm = 5 log₁₀ 9.5 = 4.89. m = −26.8 + 4.89 = −21.9.'},
+ {q:'A Cepheid’s period tells you M = −3.0. Its average apparent magnitude is 12.0. How far is it, in parsecs?',a:10000,tol:.03,u:'pc',h:'m − M = 5 log₁₀(d/10) → d = 10^((m − M + 5)/5).',s:'m − M = 15. d = 10^(20/5) = 10⁴ = 10,000 pc (10 kpc).'},
+ {q:'If the Moon (diameter 3475 km) were twice as far, 768,800 km, what would its angular size be in degrees?',a:.259,tol:.03,u:'degrees',h:'angle (rad) = diameter ÷ distance, × 57.3 for degrees.',s:'3475 ÷ 768,800 = 0.00452 rad × 57.3 = 0.259°: less than the Sun’s 0.53°, so no total solar eclipses.'},
+ {q:'A Martian moon 26 km across orbits 9,400 km from Mars. The Sun (1.39 × 10⁶ km across) is 2.28 × 10⁸ km from Mars. Angular size of the moon ÷ angular size of the Sun?',a:.454,tol:.03,u:'(ratio)',h:'Work out D/d for each and divide. Same units top and bottom.',s:'Moon: 26/9400 = 0.00277 rad. Sun: 1.39×10⁶/2.28×10⁸ = 0.00610 rad. Ratio = 0.45 < 1, so no total solar eclipse on Mars: the moon only crosses the Sun as a dark spot.'},
+ {q:'A star 5 pc away is observed from Mars (orbit radius 1.52 AU) six months apart. What parallax angle would be measured, in arcseconds?',a:.304,tol:.03,u:'arcsec',h:'From Earth p = 1/d. The baseline is 1.52 times longer, so the shift is 1.52 times bigger.',s:'From Earth p = 1/5 = 0.2″. From Mars p = 1.52 × 0.2 = 0.304″.'},
+ {q:'Stars A and B have the same apparent magnitude. A is 4 pc away, B is 20 pc away. How many times more luminous is B?',a:25,tol:.02,u:'×',h:'Same brightness received, so luminosity ∝ d².',s:'(20/4)² = 5² = 25. B gives out 25 times more energy (3.5 magnitudes in M).'},
+ {q:'Sedna’s distance from the Sun varies from 76 to 900 AU. Using Kepler’s third law, estimate its orbital period in years.',a:10780,tol:.03,u:'years',h:'Average distance a = (nearest + farthest) ÷ 2. Then P = a^1.5.',s:'a = (76 + 900)/2 = 488 AU. P = 488^1.5 = 10,780 years.'},
+ {q:'Two stars have the same surface temperature, but A is 400 times as luminous as B. How many times larger is A’s radius?',a:20,tol:.02,u:'×',h:'Same temperature → same energy per unit area, so luminosity ∝ surface area ∝ radius².',s:'Area ratio = 400, radius ratio = √400 = 20. A is a giant compared with B.'},
+ {q:'Mercury spins once in 59 days and orbits in 88 days, in the same direction. How long is a Mercury solar day, in Earth days?',a:179,tol:.03,u:'days',h:'Same direction: 1/solar = 1/sidereal − 1/year.',s:'1/solar = 1/59 − 1/88 = 0.016949 − 0.011364 = 0.005585 → 179 days (with the precise 58.65 and 87.97 days you get 176).'},
+ {q:'A star is 100 times as luminous as the Sun (M = 4.8). What is its absolute magnitude?',a:-.2,tol:.06,u:'',h:'×100 in luminosity = 5 magnitudes brighter (smaller).',s:'M = 4.8 − 5 = −0.2.'},
+ {q:'An eclipsing binary’s light curve has deep dips every 2.87 days and there are two dips per orbit. What is its orbital period in days? (Algol-type)',a:2.87,tol:.02,u:'days',h:'In one orbit each star is hidden once: one deep dip and one shallow dip. Deep dip to deep dip is one full orbit.',s:'Deep dip to the next deep dip = one full orbit = 2.87 days (that is Algol’s actual period).'}
+];
+
+/* ---- Readiness tracker ---- */
+const RDY=[
+ 'I can write the formula sheet (magnitudes, inverse square, distance modulus, parallax, Doppler, Kepler 3, angular size, density) from memory',
+ 'I re-did all 10 Assignment 2 questions on paper without looking, and checked them against the official solutions',
+ 'I can explain black body, Doppler, tides (and two moons) and eclipses: the Ch 5–7 material Assignment 2 tested',
+ 'I did the Ch 5–7 what-if questions and the Ch 8–14 what-if questions without revealing the answers first',
+ 'I can classify any object with criteria: planet / dwarf planet / satellite; star / protostar / brown dwarf',
+ 'I can name all five binary types and say which one a given observation reveals (including the face-on case)',
+ 'I can describe star formation in order and compare a low-mass and a high-mass star (reaction, interior, lifetime)',
+ 'I did numeric drills rounds 1 and 2 and re-did every one I missed',
+ 'I did Mock Tests A, B and C on paper under the 50-minute clock and marked myself honestly',
+ 'I went through the flashcards until “Not yet known” is empty',
+ 'I asked at Tutorial 4 (5 Nov, KK101) whether Chapter 5–7 material is on Test 2',
+ 'Calculator in degree mode, spare battery, pen; I know where and when the test is (9 Nov, 6:00 pm)'
+];
+D.ready=function(root){
+  const KEY='phys-t2-ready';const st=store.get(KEY,{});const bar=el('div','rbar','<i></i>');const lab=el('p','muted');root.appendChild(bar);root.appendChild(lab);
+  const upd=()=>{const n=RDY.filter((_,i)=>st[i]).length;bar.firstChild.style.width=(100*n/RDY.length)+'%';lab.textContent=`${n} of ${RDY.length} done`+(n===RDY.length?': you are ready.':'')};
+  RDY.forEach((t,i)=>{const l=el('label','rchk');const c=el('input');c.type='checkbox';c.checked=!!st[i];c.addEventListener('change',()=>{st[i]=c.checked;store.set(KEY,st);upd()});l.appendChild(c);l.appendChild(el('span','',t));root.appendChild(l)});
+  upd();
+};
+})();
 
 DS.init();
 </script>
