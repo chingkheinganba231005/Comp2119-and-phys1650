@@ -725,6 +725,23 @@ a.jump::before{content:"\2192\00a0"}
 .arr.sm{gap:3px}.arr.sm .ac{width:36px}.arr.sm .ac .v{width:36px;height:40px;font-size:1rem}
 .pgrid td.inq{background:color-mix(in srgb,var(--hot) 14%,var(--surface))}
 
+
+/* added: quiz demos */
+.qz-rows{display:grid;gap:8px;margin:.6rem 0}
+.qz-rows>div{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.qz-rows b{font:700 .78rem var(--f-mono);min-width:9.5em;color:var(--muted)}
+.qz-chip{display:inline-block;min-width:2em;text-align:center;padding:2px 8px;border-radius:4px;border:1.5px solid var(--line);background:var(--surface);font:700 .9rem var(--f-mono)}
+.qz-chip.hot{border-color:var(--hot);color:var(--hot)}
+.qz-chip.call{border-color:var(--call);color:var(--call)}
+.qz-chip.base{border-color:var(--base);color:var(--base)}
+.qz-key{font-size:.85rem;margin:.3rem 0 0}
+.tbl tr.qz-cur td{background:var(--code-hl)}
+.qz-ht th,.qz-ht td{padding:6px 3px;font-size:.8rem}
+.qz-ht td{font-family:var(--f-mono)}
+.qz-ht td.qz-seen{background:var(--surface-2)}
+.qz-ht td.qz-cur{outline:2.5px solid var(--hot);outline-offset:-3px}
+.qz-ht td.qz-fd{box-shadow:inset 0 -4px 0 var(--call)}
+.qz-ht td.qz-bad{background:color-mix(in srgb,var(--bad) 22%,transparent);color:var(--bad);font-weight:700}
 </style>
 <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
   <defs>
@@ -795,6 +812,12 @@ a.jump::before{content:"\2192\00a0"}
 <li><a class="card" href="#pp1"><span class="k">Practice problems 1</span><h3>Recursion and algorithm analysis</h3><p>All 16 problems of Chapters 1&ndash;2 with every solution explained: recurrences, induction, big-O proofs, counting loops, and designing recursive algorithms.</p><span class="m2">36 pages &middot; 14 demos</span></a></li>
 <li><a class="card" href="#pp2"><span class="k">Practice problems 2</span><h3>Lists, graphs, hashing and trees</h3><p>Every problem of Chapters 3&ndash;5 explained: tracing lists, stacks and queues, pointer tricks, graph modelling and searches, hash tables and their costs, tree counting (Catalan numbers) and tree algorithms such as mirror, path sum and diameter.</p><span class="m2">11 parts &middot; 18 demos</span></a></li>
 <li><a class="card" href="#pp3"><span class="k">Practice problems 3</span><h3>Searching, search trees and AVL trees</h3><p>Every problem of Chapters 6&ndash;8: jump and binary search, the two-phones puzzle, search tree algorithms, cons cells, AVL insertions and deletions, the thinnest AVL trees, pruning, splaying and range queries.</p><span class="m2">9 parts &middot; 23 demos</span></a></li>
+</ul>
+
+<h2 id="hub-exam" class="hub-h">Quiz and final exam</h2>
+<ul class="cards">
+<li><a class="card" href="#quiz"><span class="k">In-class quiz · 27 Oct · 20%</span><h3>The quiz explained</h3><p>All five questions worked out: the recursive Score and its induction proof, splitting a linked list (and the faulty pointer order), BFS against a stack, linear probing with DELETED slots, and counting smaller keys with binary search and subtree sizes.</p><span class="m2">5 questions · 5 demos</span></a></li>
+<li><a class="card" href="#final"><span class="k">Final exam · 60%</span><h3>Final exam preparation</h3><p>Quiz-style practice on the chapters the quiz did not cover (BST delete, AVL rotations, heaps, the course’s PARTITION, counting sort, Huffman), every tight bound with auxiliary space on one page, and an exam-room checklist.</p><span class="m2">6 practice questions · bounds table</span></a></li>
 </ul>
 
 <h2 id="hub-wa" class="hub-h">Written assignments</h2>
@@ -8483,7 +8506,7 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
 
 <footer class="pnav"><a class="pn prev" href="#wa1"><span class="d">Previous</span><span class="t">Written Assignment 1 · Recursion and analysis</span></a><a class="pn next" href="#wa3"><span class="d">Next</span><span class="t">Written Assignment 3 · Trees, searching, sorting</span></a></footer></main></div></section>
 
-<section class="view" id="wa3" data-title="Written Assignment 3 · Trees, searching, sorting" data-prev="wa2" data-next="pa1"><section class="hero"><p class="eyebrow">Written Assignment 3 · Trees, AVL trees, searching and sorting (Chapters 5–10) · due 25 Nov 2026</p><h1>Written Assignment 3 <em>Guide and solutions</em></h1><p class="lede">Four questions: rebuild a tree from its preorder, work a BST and an AVL tree through delete and insert, search a bitonic array in logarithmic time, and make QuickSort safe against bad pivots. Parts 2 to 5 are a guide to the ideas, with practice tools and a ladder of hints for every sub-question; Parts 6 to 9 are my own worked solutions to all four questions, written with the methods of the lectures and the practice sets. They are unofficial: the official solutions will follow when they are released.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
+<section class="view" id="wa3" data-title="Written Assignment 3 · Trees, searching, sorting" data-prev="wa2" data-next="quiz"><section class="hero"><p class="eyebrow">Written Assignment 3 · Trees, AVL trees, searching and sorting (Chapters 5–10) · due 25 Nov 2026</p><h1>Written Assignment 3 <em>Guide and solutions</em></h1><p class="lede">Four questions: rebuild a tree from its preorder, work a BST and an AVL tree through delete and insert, search a bitonic array in logarithmic time, and make QuickSort safe against bad pivots. Parts 2 to 5 are a guide to the ideas, with practice tools and a ladder of hints for every sub-question; Parts 6 to 9 are my own worked solutions to all four questions, written with the methods of the lectures and the practice sets. They are unofficial: the official solutions will follow when they are released.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
 
 <section class="part" id="wa3-1" data-toc="Before you start" data-sub="the map and the rules"><header class="ch-h"><p class="eyebrow">Part 1 · Read this first</p><h2>Before you start: what is asked, and how to use this guide</h2></header>
 <div class="note rule"><p class="lab">How this part of the app is organised</p><p>Written Assignment 3 is due <b>25 Nov 2026, 7:00 pm</b>. The cover page says <em>&ldquo;all answers must be your own work&rdquo;</em>, so use what follows to understand the methods and to check your own working, and write your own answer in your own words. <b>Parts 2 to 5</b> explain every idea the questions rely on, give tools to practise on <em>other</em> examples, and give a ladder of hints for each sub-question. <b>Parts 6 to 9</b> are my own worked solutions to Questions 1 to 4, with pictures, pseudocode in the style of the lectures, and demos; every number in them was also checked by a program. They are <b>unofficial</b>: when the official solutions come out, compare with them and tell me what differs.</p></div>
@@ -9077,9 +9100,115 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
 <div class="note rule"><p class="lab">What to remember</p><p>For trees, <em>draw first, then read</em>. For AVL questions, <em>write the heights down, then decide</em>. For logarithmic algorithms, <em>name what stays true on every pass and show that the range shrinks</em>. For QuickSort, <em>count levels, then multiply by the work per level</em>. The assignment is four applications of these four sentences.</p></div>
 </section>
 
-<footer class="pnav"><a class="pn prev" href="#wa2"><span class="d">Previous</span><span class="t">Written Assignment 2 · Lists, stacks, hashing</span></a><a class="pn next" href="#pa1"><span class="d">Next</span><span class="t">Programming Assignment 1 · Course selection</span></a></footer></main></div></section>
+<footer class="pnav"><a class="pn prev" href="#wa2"><span class="d">Previous</span><span class="t">Written Assignment 2 · Lists, stacks, hashing</span></a><a class="pn next" href="#quiz"><span class="d">Next</span><span class="t">In-class Quiz · 27 Oct · explained</span></a></footer></main></div></section>
 
-<section class="view" id="pa1" data-title="Programming Assignment 1 · Course selection" data-prev="wa3" data-next="pa2"><section class="hero"><p class="eyebrow">Programming Assignment 1 · Course Selection Challenge · due 4 Nov 2026, 7:00 pm</p><h1>Programming Assignment 1 <em>Guide and solutions</em></h1><p class="lede">Three C++ programs on a network of courses where some courses are prerequisites of others: the cheapest way to become eligible for a course, the courses that depend completely on one course, and a tidy ordering of all courses. Parts 2 to 6 explain what each task is really asking, show the statement’s own samples as pictures, list the traps in the wording and give a ladder of hints for every task. Parts 7 to 9 are my own worked solutions: a C++14 program for each task, with the reasoning, the running time, a trace of the sample and a step-by-step demo. They are unofficial; the official solutions will follow when they are released.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
+<section class="view" id="quiz" data-title="In-class Quiz · 27 Oct · explained" data-prev="wa3" data-next="pa1"><section class="hero"><p class="eyebrow">In-class quiz · 27 Oct 2026 · 20% of the course · Chapters 1–7 · worked solutions (not official)</p><h1>The Quiz <em>Explained</em></h1><p class="lede">All five questions, every blank and every bound, with the reasoning a marker wants to see. The quiz is also the best preview you have of the <strong>final exam (60%)</strong>: same conventions on the cover, same kinds of blanks, the same “faulty version” traps. The last part turns what it teaches into a checklist for the final.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
+
+<section class="part" id="qz-0" data-toc="Read the cover first" data-sub="the conventions decide the marks"><header class="ch-h"><p class="eyebrow">Part 1 · Cover page</p><h2>The cover page is part of the question</h2></header>
+<p>The quiz printed a block of <em>general conventions</em>. Each one closes a loophole, and each one costs marks if you ignore it. Expect the same block on the final.</p>
+<div class="scroll"><table class="tbl wrap"><thead><tr><th class="l">Convention</th><th class="l">What it means for your answer</th></tr></thead><tbody>
+<tr><td class="l">All logarithms have base 2</td><td class="l">Write log <i>n</i>; inside Θ the base does not matter, but in exact counts (like the number of calls) it does.</td></tr>
+<tr><td class="l">Integer arithmetic, comparisons, array access, pointer operations, one stack/queue operation: constant time</td><td class="l">Count <em>operations</em>, not the size of the numbers. Score(<i>n</i>) adding big numbers is still Θ(1) per add.</td></tr>
+<tr><td class="l">Running time includes all recursive calls</td><td class="l">Two recursive calls on <i>n</i>/2 is <i>T</i>(<i>n</i>) = 2<i>T</i>(<i>n</i>/2) + Θ(1), not <i>T</i>(<i>n</i>/2).</td></tr>
+<tr><td class="l">Auxiliary space excludes the input but <strong>includes the recursion stack</strong></td><td class="l">A recursive procedure with depth log <i>n</i> uses Θ(log <i>n</i>) space even with no arrays. An iterative loop with a few variables uses Θ(1).</td></tr>
+<tr><td class="l">Express a tight bound with Θ</td><td class="l">“O(<i>n</i>²)” for something that is Θ(<i>n</i>) is true but scores zero. Give Θ.</td></tr>
+<tr><td class="l">Code completions: fill only the blanks; no new statements or variables; no side effects; a statement blank is one assignment</td><td class="l">No <code>i++</code> inside an expression, no extra <code>if</code>. If you need something the code does not have, your idea is not the intended one.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="part" id="qz-1" data-toc="Q1 A recursive score" data-sub="25 marks · recurrences, induction, Θ"><header class="ch-h"><p class="eyebrow">Part 2 · Question 1 · 25 marks</p><h2>Q1: Score(n), two identical calls</h2></header>
+<div class="code" role="group" aria-label="code"><span class="l">Score(n):        <span class="cm">// n = 2^r</span></span><span class="l">    <span class="kw">if</span> n == 1: <span class="kw">return</span> 1</span><span class="l">    a = Score(n / 2)</span><span class="l">    b = Score(n / 2)</span><span class="l">    <span class="kw">return</span> a + b + n</span></div>
+<h3>(a) Run it by hand on n = 4</h3>
+<p>Work bottom-up. Score(1) = 1. Score(2) = 1 + 1 + 2 = <b>4</b>. Score(4) = 4 + 4 + 4 = <b>12</b>.</p>
+<p>Calls: Score(4) makes two calls to Score(2); each makes two calls to Score(1). Total = 1 + 2 + 4 = <b>7</b>.</p>
+<div class="stepper" data-demo="qzscore">
+<p class="lab">Try it yourself: Score against FastScore</p>
+<div class="opts"><label>r (so n = 2<sup>r</sup>) <input type="range" min="0" max="6" value="2" data-k="r"></label><b class="mono" data-o="rv">r = 2</b></div>
+<div class="stage"></div><div class="cap" aria-live="polite"></div><div class="ctl"></div>
+</div>
+<h3>(b) Count the calls with a recurrence</h3>
+<div class="note rule"><p class="lab">Answer</p><p>(i) <i>C</i>(1) = 1 and <i>C</i>(<i>n</i>) = 2<i>C</i>(<i>n</i>/2) + 1 for <i>n</i> &gt; 1 (this call, plus everything inside the two calls). (ii) <i>C</i>(<i>n</i>) = 2<i>n</i> − 1. (iii) Θ(<i>n</i>): each call does constant work besides its calls, so the time is Θ(<i>C</i>(<i>n</i>)). (iv) <b>Yes</b>: <i>n</i> = <i>o</i>(<i>n</i> log <i>n</i>) because <i>n</i> / (<i>n</i> log <i>n</i>) = 1/log <i>n</i> → 0.</p></div>
+<details class="ans"><summary>Why 2n − 1? (two ways to see it)</summary><div class="in"><p><b>Unwrap:</b> <i>C</i>(<i>n</i>) = 1 + 2 + 4 + … + 2<sup><i>r</i></sup> (one term per level of the call tree), a geometric series = 2<sup><i>r</i>+1</sup> − 1 = 2<i>n</i> − 1.</p><p><b>Check:</b> <i>C</i>(1) = 1 ✓, <i>C</i>(2) = 3 ✓, <i>C</i>(4) = 7 ✓ (part (a)). The call tree is a full binary tree with <i>n</i> leaves, and such a tree has <i>n</i> − 1 internal nodes.</p></div></details>
+<h3>(c) Prove Score(2<sup>r</sup>) = 2<sup>r</sup>(1 + r) by induction on r</h3>
+<details class="ans sol"><summary>Show the model proof (the four labelled pieces)</summary><div class="in">
+<p><b>Claim P(r):</b> Score(2<sup><i>r</i></sup>) = 2<sup><i>r</i></sup>(1 + <i>r</i>).</p>
+<p><b>Base case r = 0:</b> Score(1) returns 1, and 2<sup>0</sup>(1 + 0) = 1. ✓</p>
+<p><b>Inductive hypothesis:</b> assume P(<i>k</i>) holds for some <i>k</i> ≥ 0: Score(2<sup><i>k</i></sup>) = 2<sup><i>k</i></sup>(1 + <i>k</i>).</p>
+<p><b>Inductive step:</b> for <i>n</i> = 2<sup><i>k</i>+1</sup> &gt; 1 both calls are Score(2<sup><i>k</i></sup>), so by the hypothesis Score(2<sup><i>k</i>+1</sup>) = 2 · 2<sup><i>k</i></sup>(1 + <i>k</i>) + 2<sup><i>k</i>+1</sup> = 2<sup><i>k</i>+1</sup>(1 + <i>k</i>) + 2<sup><i>k</i>+1</sup> = 2<sup><i>k</i>+1</sup>(2 + <i>k</i>) = 2<sup><i>k</i>+1</sup>(1 + (<i>k</i> + 1)). That is P(<i>k</i> + 1). By induction P(<i>r</i>) holds for all <i>r</i> ≥ 0. ∎</p></div></details>
+<div class="note warn"><p class="lab">Where marks go</p><p>The question says “state the base case, inductive hypothesis and inductive step”. Label all three. Say <em>where</em> you use the hypothesis (“by the IH, each call returns …”), and why the step applies (n &gt; 1, so the code takes the recursive branch).</p></div>
+<h3>(d) FastScore: one call instead of two</h3>
+<div class="note rule"><p class="lab">Answer</p><p>(i) <code>2 * a + n</code>. (ii) The two calls in Score have the same argument and Score has no side effects, so they return the same value: <i>a</i> + <i>b</i> = 2<i>a</i>. (iii) <i>T</i>(<i>n</i>) = <i>T</i>(<i>n</i>/2) + Θ(1) → <b>Θ(log <i>n</i>)</b>: log <i>n</i> + 1 calls, constant work each. (iv) <b>Θ(log <i>n</i>)</b> auxiliary space: the recursion is log <i>n</i> deep and each frame is constant size (the convention counts the stack).</p></div>
+<div class="note warn"><p class="lab">Trap</p><p>Saying “Θ(1) space, it has no arrays” for (iv) loses the marks. The cover says auxiliary space <em>includes the recursion stack</em>. Also, original Score has the same depth, so it also uses Θ(log <i>n</i>) space, even though it takes Θ(<i>n</i>) time.</p></div>
+</section>
+
+<section class="part" id="qz-2" data-toc="Q2 Splitting a linked list" data-sub="15 marks · pointers, the faulty order"><header class="ch-h"><p class="eyebrow">Part 3 · Question 2 · 15 marks</p><h2>Q2: split one list into urgent and ordinary</h2></header>
+<p>(a) Input <code>A(f) → B(t) → C(t) → D(f) → E(t)</code>. Keep the order inside each output: urgent list <b>B → C → E</b>; ordinary list <b>A → D</b>.</p>
+<div class="code" role="group" aria-label="code"><span class="l">Split(head):</span><span class="l">    urgentHead = urgentTail = <span class="kw">null</span></span><span class="l">    ordinaryHead = ordinaryTail = <span class="kw">null</span></span><span class="l">    p = head</span><span class="l">    <span class="kw">while</span> p != <span class="kw">null</span>:</span><span class="l">        nextNode = <b>p.next</b>            <span class="cm">// (i)  save the rest first</span></span><span class="l">        p.next = <b>null</b>                <span class="cm">// (ii) p will be the new tail</span></span><span class="l">        <span class="kw">if</span> p.urgent:</span><span class="l">            <span class="kw">if</span> urgentHead == <span class="kw">null</span>: urgentHead = p</span><span class="l">            <span class="kw">else</span>: <b>urgentTail.next = p</b>   <span class="cm">// (iii)</span></span><span class="l">            urgentTail = p</span><span class="l">        <span class="kw">else</span>:</span><span class="l">            <span class="kw">if</span> ordinaryHead == <span class="kw">null</span>: ordinaryHead = p</span><span class="l">            <span class="kw">else</span>: <b>ordinaryTail.next = p</b> <span class="cm">// (iv)</span></span><span class="l">            ordinaryTail = p</span><span class="l">        p = nextNode</span><span class="l">    <span class="kw">return</span> (urgentHead, ordinaryHead)</span></div>
+<p>Why (ii) is <code>null</code>: each node becomes the <em>last</em> node of its output list at the moment it is appended. Cutting its old <code>next</code> makes sure the two output lists end properly (otherwise E’s list could still point into the other list). Empty input: the loop never runs and both heads stay <code>null</code>; one category only: the other head stays <code>null</code>. Both are handled.</p>
+<div class="stepper" data-demo="qzsplit">
+<p class="lab">Try it yourself</p>
+<div class="opts"><label>Version <select data-k="v"><option value="ok">correct (save next, then cut)</option><option value="bad">faulty (cut, then save)</option></select></label></div>
+<div class="stage"></div><div class="cap" aria-live="polite"></div><div class="ctl"></div>
+</div>
+<div class="note rule"><p class="lab">Answer (c)</p><p>(i) Θ(<i>n</i>): one pass, constant work per node. (ii) Θ(1): a fixed number of pointers, no recursion, no new nodes. Faulty order <code>p.next = null; nextNode = p.next</code>: (iii) <code>nextNode</code> is <b>null</b> in the first iteration (we read the pointer we just erased). (iv) <b>1</b> iteration: <code>p = nextNode = null</code> ends the loop, so only A is placed and B…E are lost.</p></div>
+<div class="note warn"><p class="lab">The lesson for the final</p><p>“Faulty version” questions are answered by <strong>running the faulty code on the given input</strong>, line by line, not by describing it in general. The order of two pointer statements is a classic: save before you overwrite.</p></div>
+</section>
+
+<section class="part" id="qz-3" data-toc="Q3 Graph traversal" data-sub="15 marks · BFS order, all components, stack ≠ BFS"><header class="ch-h"><p class="eyebrow">Part 4 · Question 3 · 15 marks</p><h2>Q3: queue traversal, then the same with a stack</h2></header>
+<p>Adjacency lists: A: B, D · B: A, C, E · C: B, D, F · D: A, C, E · E: B, D, F · F: C, E · G: none. Mark a vertex <em>when it is enqueued</em> (so nothing enters the queue twice).</p>
+<div class="stepper" data-demo="qzgraph">
+<p class="lab">Try it yourself</p>
+<div class="opts"><label>Container <select data-k="m"><option value="q">FIFO queue (BFS), part (a)</option><option value="s">LIFO stack, part (c)</option></select></label></div>
+<div class="stage"></div><div class="cap" aria-live="polite"></div><div class="ctl"></div>
+</div>
+<div class="note rule"><p class="lab">Answer (a)</p><p>(i) Removal order: <b>A, B, D, C, E, F</b>. G is never reached (no edges). (ii) After D’s neighbours are examined the queue is <b>[C, E]</b> (front to back): A’s turn added B, D; B’s turn added C, E; D’s neighbours A, C, E were all already marked.</p></div>
+<div class="note rule"><p class="lab">Answer (b)</p><p><code>for each v in V: if <b>not visited[v]</b>: BFSFrom(<b>v</b>)</code>. (iii) Θ(|<i>V</i>| + |<i>E</i>|): every vertex is enqueued once and every adjacency list is scanned once (each undirected edge appears twice), plus the outer loop over all vertices.</p></div>
+<div class="note rule"><p class="lab">Answer (c)</p><p>(i) Pops: <b>A, D, E</b>. Pop A, push B then D; pop D (top), push C then E; pop E. (ii) <b>No</b>. (iii) After E is popped, <b>B</b> is still in the stack: dist(A, B) = <b>1</b>, but the third vertex popped, E, has dist(A, E) = <b>2</b>. A stack does not process vertices in order of distance, which is why only BFS gives shortest paths in unweighted graphs.</p></div>
+</section>
+
+<section class="part" id="qz-4" data-toc="Q4 Linear probing as a set" data-sub="20 marks · DELETED slots, InsertIfAbsent"><header class="ch-h"><p class="eyebrow">Part 5 · Question 4 · 20 marks</p><h2>Q4: a set stored with linear probing</h2></header>
+<p>Table size 11, <i>h</i>(<i>k</i>, <i>i</i>) = (<i>k</i> + <i>i</i>) mod 11. Search stops at the key, at EMPTY, or after 11 probes; it <strong>does not stop at DELETED</strong>.</p>
+<div class="stepper" data-demo="qzprobe">
+<p class="lab">Try it yourself</p>
+<div class="opts"><label>Operation <select data-k="op"><option value="s30">(a)(i) search 30</option><option value="s52">(a)(ii) search 52</option><option value="bad30">(b) proposed InsertIfAbsent(30)</option><option value="ok30">(c) correct InsertIfAbsent(30)</option><option value="ok41">(c) correct InsertIfAbsent(41)</option></select></label></div>
+<div class="stage"></div><div class="cap" aria-live="polite"></div><div class="ctl"></div>
+</div>
+<div class="note rule"><p class="lab">Answer (a)</p><p>30 mod 11 = 8. (i) Slots <b>8, 9, 10, 0</b>: found at 0, <b>present</b> (9 is DELETED, so search goes on). (ii) 52 mod 11 = 8. Slots <b>8, 9, 10, 0, 1, 2</b>: slot 2 is EMPTY, so <b>absent</b>.</p></div>
+<div class="note rule"><p class="lab">Answer (b)</p><p>(i) Slots <b>8, 9</b>. (ii) Slot <b>9</b> is overwritten with 30 and it returns <b>INSERTED</b>. (iii) <b>No.</b> 30 was already stored in slot 0, further along the probe sequence. A DELETED slot only means “something used to be here”; it says nothing about whether <i>k</i> is stored later. Now 30 appears twice, which breaks the set requirement.</p></div>
+<div class="code" role="group" aria-label="code"><span class="l">InsertIfAbsent(T, m, k):</span><span class="l">    firstDeleted = NONE</span><span class="l">    <span class="kw">for</span> i = 0 <span class="kw">to</span> m - 1:</span><span class="l">        j = (k + i) mod m</span><span class="l">        <span class="kw">if</span> T[j] == k: <span class="kw">return</span> PRESENT</span><span class="l">        <span class="kw">if</span> <b>T[j] == DELETED and firstDeleted == NONE</b>:   <span class="cm">// (i)</span></span><span class="l">            firstDeleted = j</span><span class="l">        <span class="kw">if</span> T[j] == EMPTY:</span><span class="l">            <span class="kw">if</span> firstDeleted != NONE: j = <b>firstDeleted</b>   <span class="cm">// (ii)</span></span><span class="l">            T[j] = k</span><span class="l">            <span class="kw">return</span> INSERTED</span><span class="l">    <span class="kw">if</span> <b>firstDeleted != NONE</b>:   <span class="cm">// (iii)</span></span><span class="l">        T[<b>firstDeleted</b>] = k      <span class="cm">// (iv)</span></span><span class="l">        <span class="kw">return</span> INSERTED</span><span class="l">    <span class="kw">return</span> FULL</span></div>
+<div class="note rule"><p class="lab">Answer (c)</p><p>(i)–(iv) as shown. The “and firstDeleted == NONE” is what makes it the <em>first</em> deleted slot “without replacement by a later one”. Reaching EMPTY proves <i>k</i> is absent (the table is valid for search), so it is safe to reuse the first DELETED slot. (v) Θ(<i>m</i>) worst case (all <i>m</i> slots probed). (vi) With no EMPTY slot it returns INSERTED <b>exactly when <i>k</i> is not stored and at least one slot is DELETED</b>: the loop then checks all <i>m</i> slots (so <i>k</i> is really absent) and uses the first DELETED one.</p></div>
+</section>
+
+<section class="part" id="qz-5" data-toc="Q5 Counting smaller keys" data-sub="25 marks · rank by binary search and by subtree sizes"><header class="ch-h"><p class="eyebrow">Part 6 · Question 5 · 25 marks</p><h2>Q5: R(x), the number of stored keys smaller than x</h2></header>
+<p>The BST: root 24; 11 (children 5, 17) and 38 (children 31, 46); 35 is the right child of 31.</p>
+<div class="note rule"><p class="lab">Answer (a)</p><p>(i) Inorder: <b>5, 11, 17, 24, 31, 35, 38, 46</b> (always sorted for a BST). (ii) R(35) = |{5, 11, 17, 24, 31}| = <b>5</b> (strictly smaller, so 35 itself is not counted).</p></div>
+<div class="code" role="group" aria-label="code"><span class="l">ArrayRank(A, n, x):</span><span class="l">    lo = 0;  hi = n          <span class="cm">// answer always lies in [lo, hi]</span></span><span class="l">    <span class="kw">while</span> lo &lt; hi:</span><span class="l">        mid = floor((lo + hi) / 2)</span><span class="l">        <span class="kw">if</span> <b>A[mid] &lt; x</b>:  lo = <b>mid + 1</b>   <span class="cm">// A[0..mid] all count</span></span><span class="l">        <span class="kw">else</span>:            hi = <b>mid</b>       <span class="cm">// A[mid..] count for nothing</span></span><span class="l">    <span class="kw">return</span> lo</span></div>
+<p>Why these blanks: the invariant is “every index below <code>lo</code> holds a key &lt; <i>x</i>, every index from <code>hi</code> on holds a key ≥ <i>x</i>”. If A[mid] &lt; <i>x</i>, mid itself counts, so <code>lo = mid + 1</code>; otherwise mid might be the first key ≥ <i>x</i>, so keep it: <code>hi = mid</code> (not mid − 1). It returns 0 for <i>n</i> = 0 and works for <i>x</i> outside the range.</p>
+<div class="stepper" data-demo="qzrank">
+<p class="lab">Try it yourself: TreeRank on the quiz tree</p>
+<div class="opts"><label>Query x <select data-k="x"><option>35</option><option>25</option><option>4</option><option>50</option><option>18</option><option>38</option></select></label></div>
+<div class="stage"></div><div class="cap" aria-live="polite"></div><div class="ctl"></div>
+</div>
+<div class="note rule"><p class="lab">Answer (c)</p><p><code>if x &lt;= u.key: return TreeRank(<b>u.left</b>, x)</code> · <code>else: return <b>Size(u.left) + 1</b> + TreeRank(<b>u.right</b>, x)</code>. (iv) u.key ≥ <i>x</i>, so u is not smaller than <i>x</i>, and every key in the right subtree is larger than u.key ≥ <i>x</i>. (v) u.key &lt; <i>x</i>, so u counts one; every left-subtree key is smaller than u.key &lt; <i>x</i>, so the <em>whole</em> left subtree counts, and its stored size gives that number in constant time.</p></div>
+<div class="note rule"><p class="lab">Answer (d)</p><p>(i) Sorted array: Θ(log <i>n</i>). (ii) BST of height <i>h</i>: Θ(<i>h</i>) (one root-to-leaf path, constant work per node). (iii) Arbitrary shape with <i>n</i> keys: Θ(<i>n</i>) (a chain has <i>h</i> = <i>n</i> − 1). Without size fields, perfect tree, query <i>n</i> + 1: (iv) the root goes right and calls Size on its <b>left subtree, (<i>n</i> − 1)/2 nodes</b>. (v) Θ(<i>n</i>). (vi) <b>Yes</b>: <i>h</i> = log(<i>n</i> + 1) − 1, so O(<i>h</i>) = O(log <i>n</i>), but this single helper call already takes Θ(<i>n</i>) time.</p></div>
+<div class="note warn"><p class="lab">Trap</p><p>“Θ(log n)” for (ii) is wrong: the question asks in terms of <i>h</i>, and a BST is not necessarily balanced. Save “log n” for AVL trees and sorted arrays.</p></div>
+</section>
+
+<section class="part" id="qz-6" data-toc="What the quiz says about the final" data-sub="six question types"><header class="ch-h"><p class="eyebrow">Part 7 · Lessons</p><h2>Six question types, and how to score on each</h2></header>
+<div class="scroll"><table class="tbl wrap"><thead><tr><th class="l">Type</th><th class="l">Quiz example</th><th class="l">Recipe</th></tr></thead><tbody>
+<tr><td class="l"><b>Trace</b></td><td class="l">Score(4); BFS order; probe sequences; inorder</td><td class="l">Write every intermediate state (queue contents, slot by slot). Partial traces earn partial marks.</td></tr>
+<tr><td class="l"><b>Recurrence and closed form</b></td><td class="l"><i>C</i>(<i>n</i>) = 2<i>C</i>(<i>n</i>/2) + 1 = 2<i>n</i> − 1</td><td class="l">Base value + “this call + the calls inside”. Check the closed form on the values you traced.</td></tr>
+<tr><td class="l"><b>Induction proof</b></td><td class="l">Score(2<sup>r</sup>) = 2<sup>r</sup>(1 + r)</td><td class="l">Label base, IH, step; show where the IH is used.</td></tr>
+<tr><td class="l"><b>Fill the blanks</b></td><td class="l">Split, BFS-all, InsertIfAbsent, ArrayRank, TreeRank</td><td class="l">State the invariant in words first (“lo: everything below counts”), then each blank follows. Test on empty input and on one element.</td></tr>
+<tr><td class="l"><b>Tight bounds</b></td><td class="l">Θ(<i>n</i>), Θ(log <i>n</i>), Θ(|<i>V</i>|+|<i>E</i>|), Θ(<i>m</i>), Θ(<i>h</i>)</td><td class="l">Θ, in the variables asked (<i>h</i> vs <i>n</i>); count the recursion stack in space.</td></tr>
+<tr><td class="l"><b>Faulty version / does it violate the claim</b></td><td class="l">swapped pointer lines; DELETED reuse; Size without fields</td><td class="l">Run it on the given input and point to the exact step that breaks; answer Yes/No first, then one sentence of evidence.</td></tr>
+</tbody></table></div>
+<p>The final covers the whole course, including the chapters after the quiz (AVL trees, heaps, sorting, Huffman). <a href="#final">Final exam preparation</a> has quiz-style practice for exactly those chapters.</p>
+</section>
+
+<footer class="pnav"><a class="pn prev" href="#wa3"><span class="d">Previous</span><span class="t">Written Assignment 3 · Trees, searching, sorting</span></a><a class="pn next" href="#pa1"><span class="d">Next</span><span class="t">Programming Assignment 1 · Course selection</span></a></footer></main></div></section>
+
+<section class="view" id="pa1" data-title="Programming Assignment 1 · Course selection" data-prev="quiz" data-next="pa2"><section class="hero"><p class="eyebrow">Programming Assignment 1 · Course Selection Challenge · due 4 Nov 2026, 7:00 pm</p><h1>Programming Assignment 1 <em>Guide and solutions</em></h1><p class="lede">Three C++ programs on a network of courses where some courses are prerequisites of others: the cheapest way to become eligible for a course, the courses that depend completely on one course, and a tidy ordering of all courses. Parts 2 to 6 explain what each task is really asking, show the statement’s own samples as pictures, list the traps in the wording and give a ladder of hints for every task. Parts 7 to 9 are my own worked solutions: a C++14 program for each task, with the reasoning, the running time, a trace of the sample and a step-by-step demo. They are unofficial; the official solutions will follow when they are released.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
 
 <section class="part" id="pa1-1" data-toc="Before you start" data-sub="the map and the rules"><header class="ch-h"><p class="eyebrow">Part 1 · Read this first</p><h2>Before you start: rules, scoring and how to use this guide</h2></header>
 <div class="note rule"><p class="lab">How this part of the app is organised</p><p>Programming Assignment 1 is due <b>4 November 2026, 7:00 pm</b>. The cover page says <em>&ldquo;all answers must be your own work&rdquo;</em> and that every submission goes through similarity-checking software, so use this to understand the methods and to test your own program, and write your own code. <b>Parts 2 to 6</b> explain the statement line by line, draw the samples, point to the lecture ideas each task is built on, list the traps and give a ladder of hints at about the level the TAs allow (&ldquo;high-level hints and guidance&rdquo;). <b>Parts 7 to 9</b> are my own worked solutions, one C++14 program per task, with the reasoning, the cost, a trace of the statement&rsquo;s sample and a step-by-step demo. They are <b>unofficial</b>: when the official solutions come out, compare with them.</p></div>
@@ -9513,7 +9642,7 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
 </tbody></table></div>
 </section>
 
-<footer class="pnav"><a class="pn prev" href="#wa3"><span class="d">Previous</span><span class="t">Written Assignment 3 · Trees, searching, sorting</span></a><a class="pn next" href="#pa2"><span class="d">Next</span><span class="t">Programming Assignment 2 · Trees and sorting</span></a></footer></main></div></section>
+<footer class="pnav"><a class="pn prev" href="#quiz"><span class="d">Previous</span><span class="t">In-class Quiz · 27 Oct · explained</span></a><a class="pn next" href="#pa2"><span class="d">Next</span><span class="t">Programming Assignment 2 · Trees and sorting</span></a></footer></main></div></section>
 
 <section class="view" id="pa2" data-title="Programming Assignment 2 · Trees and sorting" data-prev="pa1" data-next="notes"><section class="hero"><p class="eyebrow">Programming Assignment 2 · Trees and Sorting · due 2 Dec 2026 (Wed), 7:00 pm</p><h1>Programming Assignment 2 <em>Guide and solutions</em></h1><p class="lede">Three C++ programs: find the largest binary-search-tree and AVL-tree subtrees inside an arbitrary binary tree, count the fewest neighbour swaps that turn one queue into another, and list the cheapest combinations of two sorted price lists. Parts 2 to 5 explain what each task really asks, draw the statement’s samples, list the traps in the wording and give a ladder of hints for every task. Parts 6 to 8 are my own worked solutions: a C++14 program for each task, with the reasoning, the running time, a trace of a sample and a step-by-step demo. They are unofficial; the official solutions will follow when they are released.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
 
@@ -9907,7 +10036,7 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
 
 <footer class="pnav"><a class="pn prev" href="#pa1"><span class="d">Previous</span><span class="t">Programming Assignment 1 · Course selection</span></a><a class="pn next" href="#notes"><span class="d">Next</span><span class="t">Revision notes</span></a></footer></main></div></section>
 
-<section class="view" id="notes" data-title="Revision notes" data-prev="pa2" data-next="hub"><section class="hero"><p class="eyebrow">The written notes · the whole course on a few pages</p><h1>Revision <em>Notes</em></h1><p class="lede">The short version of everything: each chapter squeezed into definitions, costs and the moves you use in answers, with a link beside every line to the full explanation. Read the long version first; come back here the night before a test.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
+<section class="view" id="notes" data-title="Revision notes" data-prev="pa2" data-next="final"><section class="hero"><p class="eyebrow">The written notes · the whole course on a few pages</p><h1>Revision <em>Notes</em></h1><p class="lede">The short version of everything: each chapter squeezed into definitions, costs and the moves you use in answers, with a link beside every line to the full explanation. Read the long version first; come back here the night before a test.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
 
 <section class="part" id="notes-1" data-toc="The course in one table" data-sub="start here"><header class="ch-h"><p class="eyebrow">Part 1 · The map</p><h2>The course in one table, and four habits</h2></header>
 <p>These notes are the &ldquo;one page to remember&rdquo; of every chapter, joined together and cross-linked. Each table row ends with a link: if a line is not instantly clear, jump to that part and read the full explanation with its pictures and tools.</p>
@@ -10185,7 +10314,120 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
 <p>That is the whole course. Back to the <a href="#hub">contents</a>, or start from <a href="#notes-1">the map</a> again.</p>
 </section>
 
-<footer class="pnav"><a class="pn prev" href="#pa2"><span class="d">Previous</span><span class="t">Programming Assignment 2 · Trees and sorting</span></a><a class="pn next" href="#hub"><span class="d">Next</span><span class="t">Back to the contents</span></a></footer></main></div></section>
+<footer class="pnav"><a class="pn prev" href="#pa2"><span class="d">Previous</span><span class="t">Programming Assignment 2 · Trees and sorting</span></a><a class="pn next" href="#final"><span class="d">Next</span><span class="t">Final exam preparation</span></a></footer></main></div></section>
+
+<section class="view" id="final" data-title="Final exam preparation" data-prev="notes" data-next="hub"><section class="hero"><p class="eyebrow">Final exam · 60% of the course · the whole syllabus</p><h1>Final Exam <em>Preparation</em></h1><p class="lede">The quiz showed the examiner’s style: small traces, a recurrence, a proof, code with blanks, tight Θ bounds and a “faulty version”. It covered Chapters 1–7. This page drills the same style on the chapters the quiz did not reach (AVL trees, heaps, sorting, Huffman), then gives you one table of tight bounds and a checklist for the exam room.</p></section><div class="layout"><nav class="toc" aria-label="This chapter"><h2>In this chapter</h2><ol></ol></nav><main>
+
+<section class="part" id="fx-0" data-toc="How to use this page" data-sub="plan for the weeks before"><header class="ch-h"><p class="eyebrow">Part 1 · Plan</p><h2>How to use this page</h2></header>
+<ol>
+<li>Redo the <a href="#quiz">quiz</a> on paper without looking, then mark it with the explanations. Note every lost mark by <em>type</em> (trace, blank, bound, proof, faulty version).</li>
+<li>Do the six practice questions below on paper, one sitting each, before opening the answers. They use the course’s own code conventions: Hoare-style PARTITION with pivot <code>A[p]</code>, 1-based array heaps, heights counted in edges (empty tree −1).</li>
+<li>Learn the bounds table in Part 8 until you can write it from memory, with auxiliary space.</li>
+<li>Then go back to the practice problems (<a href="#pp1">PP1</a>, <a href="#pp2">PP2</a>, <a href="#pp3">PP3</a>) and the written assignments for volume.</li>
+</ol>
+<div class="note info"><p class="lab">What is not known yet</p><p>The final’s date, length and exact question count are on the HKU examination timetable and Moodle, not in the materials here. Assume the quiz’s cover conventions will be printed again.</p></div>
+</section>
+
+<section class="part" id="fx-1" data-toc="P1 BST delete and successor" data-sub="Ch 7 · trace, blanks, Θ(h)"><header class="ch-h"><p class="eyebrow">Part 2 · Practice 1 · Chapter 7</p><h2>P1: deleting from the quiz’s BST</h2></header>
+<p>Use the BST of quiz Q5: root 24; 11 (5, 17); 38 (31, 46); 35 is the right child of 31.</p>
+<p>(a) Give the inorder successor of 24 and of 17. [4] (b) Delete 24 using the successor rule. Draw the result. [4] (c) Complete the blank: the successor of a node <code>u</code> with a right child is <code>Min(</code> (i) <code>)</code>, where <code>Min(v)</code> follows (ii) pointers until null. [4] (d) Give the tight worst-case time of Delete on a BST of height <i>h</i>, and on any BST with <i>n</i> keys. [2]</p>
+<details class="ans sol"><summary>Show the worked solution</summary><div class="in">
+<p>(a) Successor = next key in the inorder list 5, 11, 17, 24, 31, 35, 38, 46. Successor of 24 is <b>31</b> (the minimum of its right subtree). Successor of 17 is <b>24</b>: 17 has no right child, so go up until you arrive from a left child (17 is in 11’s right subtree, 11 is 24’s left child).</p>
+<p>(b) 24 has two children. Replace its key by its successor 31, then delete 31 from the right subtree. 31 has only a right child (35), so 35 takes its place. Result: root <b>31</b>; left 11 (5, 17); right 38 with children <b>35</b> and 46. Check: inorder is still sorted.</p>
+<p>(c) (i) <code>u.right</code>; (ii) <code>left</code>.</p>
+<p>(d) Θ(<i>h</i>); over arbitrary shapes Θ(<i>n</i>) (a chain). Only a balanced tree (Chapter 8) makes it Θ(log <i>n</i>).</p></div></details>
+</section>
+
+<section class="part" id="fx-2" data-toc="P2 AVL insertions" data-sub="Ch 8 · which rotation, where"><header class="ch-h"><p class="eyebrow">Part 3 · Practice 2 · Chapter 8</p><h2>P2: insert 10, 20, 30, 25, 28, 27 into an empty AVL tree</h2></header>
+<p>(a) After each insertion that unbalances the tree, name the lowest unbalanced node, the case (LL, LR, RR, RL) and draw the tree after the rotation. [12] (b) What is the height of the final tree (edges)? Is that the smallest possible for 6 keys? [3] (c) Explain in one sentence why at most one (single or double) rotation is needed per insertion. [3]</p>
+<details class="ans sol"><summary>Show the worked solution (checked by running AVL insert)</summary><div class="in">
+<ol class="steps">
+<li><span>Insert 10, then 20: 10 (right child 20). Balanced.</span></li>
+<li><span>Insert 30: node 10 has balance −2 (left −1, right 1), and 30 went right-right: <b>RR at 10</b>, single left rotation. Tree: <b>20 (10, 30)</b>.</span></li>
+<li><span>Insert 25: goes 20 → 30 → left. Tree: 20 (10, 30 (25, ·)). Balanced (20: left 0, right 1).</span></li>
+<li><span>Insert 28: goes 20 → 30 → 25 → right. Node 30: left height 1, right −1: unbalanced, and 28 went left-right: <b>LR at 30</b> (rotate left at 25, then right at 30). Tree: <b>20 (10, 28 (25, 30))</b>.</span></li>
+<li><span>Insert 27: goes 20 → 28 → 25 → right. Node 20: left 0, right 2: unbalanced, 27 went right-left: <b>RL at 20</b> (rotate right at 28, then left at 20). Tree: <b>25 (20 (10, ·), 28 (27, 30))</b>.</span></li>
+</ol>
+<p>(b) Height <b>2</b>. A binary tree of height 1 holds at most 3 keys, so 6 keys need height ≥ 2: it is the smallest possible.</p>
+<p>(c) The rotation brings the unbalanced subtree back to the height it had <em>before</em> the insertion, so no ancestor’s balance changes and nothing above needs fixing.</p></div></details>
+<div class="note warn"><p class="lab">Trap</p><p>Fix the <b>lowest</b> unbalanced node on the path from the new key, and read the case from the first two steps of the path <em>from that node</em> toward the new key (not from the root).</p></div>
+</section>
+
+<section class="part" id="fx-3" data-toc="P3 Heaps: Heapify and BuildHeap" data-sub="Ch 9 · blanks, Θ(n) build, a faulty loop"><header class="ch-h"><p class="eyebrow">Part 4 · Practice 3 · Chapter 9</p><h2>P3: a max-heap in A[1..n]</h2></header>
+<div class="code" role="group" aria-label="code"><span class="l">Heapify(A, i, n):        <span class="cm">// push A[i] down; subtrees of i are heaps</span></span><span class="l">    r = i</span><span class="l">    <span class="kw">while</span> r &lt;= floor(n / 2):</span><span class="l">        <span class="kw">if</span> 2r == n:</span><span class="l">            <span class="kw">if</span> A[r] &lt; A[2r]: swap(A[r], A[2r])</span><span class="l">            <span class="kw">break</span></span><span class="l">        <span class="kw">if</span> A[2r] &gt; A[2r+1]: c = 2r  <span class="kw">else</span>: c = ___(i)___</span><span class="l">        <span class="kw">if</span> A[r] &lt; A[c]: swap(A[r], A[c]);  r = ___(ii)___</span><span class="l">        <span class="kw">else</span>: <span class="kw">break</span></span><span class="l"></span><span class="l">BuildHeap(A, n):</span><span class="l">    <span class="kw">for</span> i = ___(iii)___ <span class="kw">downto</span> 1:  Heapify(A, i, n)</span></div>
+<p>(a) Fill (i)–(iii). [6] (b) Run BuildHeap on A = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]. [5] (c) Tight bounds: Heapify, BuildHeap, HeapSort; auxiliary space of this Heapify. [4] (d) A student runs the loop of BuildHeap <em>upward</em>, i = 1 to floor(n/2). Does it always build a heap? Use A = [1, 2, 3, 4, 5, 6, 7]. [5]</p>
+<details class="ans sol"><summary>Show the worked solution (checked by running the code)</summary><div class="in">
+<p>(a) (i) <code>2r + 1</code>; (ii) <code>c</code>; (iii) <code>floor(n / 2)</code> (positions after it are leaves, already heaps).</p>
+<p>(b) Result: <b>[16, 14, 10, 8, 7, 9, 3, 2, 4, 1]</b>. Order of work: i = 5 (16 vs child 7: fine), i = 4 (2 sinks below 14), i = 3 (3 swaps with 10), i = 2 (1 sinks: swap with 16, then with 7), i = 1 (4 sinks: swap with 16, 14, 8).</p>
+<p>(c) Heapify Θ(log <i>n</i>) worst case (one root-to-leaf path). BuildHeap <b>Θ(<i>n</i>)</b>, not Θ(<i>n</i> log <i>n</i>): most nodes are near the bottom and sink only a little (sum of heights = O(<i>n</i>)). HeapSort Θ(<i>n</i> log <i>n</i>). Space Θ(1): this Heapify is a loop, no recursion.</p>
+<p>(d) <b>No.</b> Upward: i = 1 swaps 1 with 3 and then sinks it below 7 → [3, 2, 7, 4, 5, 6, 1]; i = 2 swaps 2 with 5 → [3, 5, 7, 4, 2, 6, 1]; i = 3: 7 is fine. Final <b>[3, 5, 7, 4, 2, 6, 1]</b>: root 3 &lt; its child 7, not a heap. Heapify assumes both subtrees are already heaps, which only the downward order guarantees. (Correct downward order gives [7, 5, 6, 4, 2, 1, 3].)</p></div></details>
+</section>
+
+<section class="part" id="fx-4" data-toc="P4 Quicksort with the course’s PARTITION" data-sub="Ch 10 · trace, blanks, the q − 1 bug"><header class="ch-h"><p class="eyebrow">Part 5 · Practice 4 · Chapter 10</p><h2>P4: the two-finger PARTITION</h2></header>
+<div class="code" role="group" aria-label="code"><span class="l">PARTITION(A, p, r):</span><span class="l">    v = A[p];  i = p - 1;  j = r + 1</span><span class="l">    <span class="kw">while</span> TRUE:</span><span class="l">        <span class="kw">do</span> j-- <span class="kw">while</span> ( ___(i)___ )</span><span class="l">        <span class="kw">do</span> i++ <span class="kw">while</span> ( ___(ii)___ )</span><span class="l">        <span class="kw">if</span> ( ___(iii)___ ) swap(A[i], A[j])</span><span class="l">        <span class="kw">else</span> <span class="kw">return</span> ___(iv)___</span><span class="l"></span><span class="l">QuickSort(A, p, r):</span><span class="l">    <span class="kw">if</span> p &lt; r:</span><span class="l">        q = PARTITION(A, p, r)</span><span class="l">        QuickSort(A, p, ___(v)___);  QuickSort(A, ___(vi)___, r)</span></div>
+<p>(a) Fill (i)–(vi). [6] (b) Trace PARTITION on A[1..7] = [5, 3, 8, 1, 9, 2, 7]: give every swap and the returned q. [6] (c) A student writes <code>QuickSort(A, p, q − 1); QuickSort(A, q + 1, r)</code>. Does it sort the array above? [4] (d) Tight worst-case time and auxiliary space; which input causes it? [4]</p>
+<details class="ans sol"><summary>Show the worked solution (checked by running the code)</summary><div class="in">
+<p>(a) (i) <code>A[j] &gt; v</code>; (ii) <code>A[i] &lt; v</code>; (iii) <code>i &lt; j</code>; (iv) <code>j</code>; (v) <code>q</code>; (vi) <code>q + 1</code>.</p>
+<p>(b) v = 5. j stops at 6 (A = 2), i stops at 1 (A = 5): swap → [2, 3, 8, 1, 9, 5, 7]. j stops at 4 (A = 1), i stops at 3 (A = 8): swap → [2, 3, 1, 8, 9, 5, 7]. j stops at 3 (A = 1), i stops at 4 (A = 8): i ≥ j, return <b>q = 3</b>. Left part [2, 3, 1] ≤ 5 ≤ right part [8, 9, 5, 7].</p>
+<p>(c) <b>No.</b> With this PARTITION, A[q] is <em>not</em> the pivot in its final place (A[3] = 1 here). Skipping index q leaves it unsorted: the result is [2, 3, 1, 7, 5, 8, 9]. The <code>q − 1 / q + 1</code> form belongs to a different partition scheme that puts the pivot at q.</p>
+<p>(d) Θ(<i>n</i>²) time when every split is 1 against <i>n</i> − 1, e.g. an already sorted array (pivot A[p] is the minimum; PARTITION returns q = p). The recursion is then <i>n</i> deep, so auxiliary space is Θ(<i>n</i>) in the worst case. Average and best case Θ(<i>n</i> log <i>n</i>).</p></div></details>
+</section>
+
+<section class="part" id="fx-5" data-toc="P5 Counting sort and stability" data-sub="Ch 10 · blanks, why right-to-left"><header class="ch-h"><p class="eyebrow">Part 6 · Practice 5 · Chapter 10</p><h2>P5: counting sort, keys in 0..k</h2></header>
+<div class="code" role="group" aria-label="code"><span class="l">CountingSort(A, B, n, k):</span><span class="l">    <span class="kw">for</span> i = 0 <span class="kw">to</span> k: C[i] = 0</span><span class="l">    <span class="kw">for</span> j = 1 <span class="kw">to</span> n: C[A[j]] = C[A[j]] + 1</span><span class="l">    <span class="kw">for</span> i = 1 <span class="kw">to</span> k: C[i] = ___(i)___</span><span class="l">    <span class="kw">for</span> j = n <span class="kw">downto</span> 1:</span><span class="l">        B[ ___(ii)___ ] = A[j]</span><span class="l">        C[A[j]] = C[A[j]] - 1</span></div>
+<p>(a) Fill (i) and (ii). [4] (b) Sort the records 2a, 0b, 2c, 1d, 0e (key then label) and give C after the third loop. [4] (c) If the last loop ran j = 1 to n, would B still be sorted? Would it be stable? Why does radix sort care? [5] (d) Time and auxiliary space. [2]</p>
+<details class="ans sol"><summary>Show the worked solution (checked by running the code)</summary><div class="in">
+<p>(a) (i) <code>C[i] + C[i - 1]</code> (now C[i] = number of keys ≤ i); (ii) <code>C[A[j]]</code> (the last free position for that key).</p>
+<p>(b) Counts [2, 1, 2] → cumulative <b>C = [2, 3, 5]</b>. Result <b>0b, 0e, 1d, 2a, 2c</b>: equal keys keep their input order.</p>
+<p>(c) Still sorted, but <b>not stable</b>: it gives 0e, 0b, 1d, 2c, 2a (equal keys reversed). Radix sort sorts by the least significant digit first and relies on each pass being stable, so that the order from earlier digits survives among equal later digits. An unstable pass destroys it.</p>
+<p>(d) Θ(<i>n</i> + <i>k</i>) time and Θ(<i>n</i> + <i>k</i>) auxiliary space (B and C). It beats the Ω(<i>n</i> log <i>n</i>) bound because it never compares keys.</p></div></details>
+</section>
+
+<section class="part" id="fx-6" data-toc="P6 Huffman coding" data-sub="Ch 11 · build, cost, a check"><header class="ch-h"><p class="eyebrow">Part 7 · Practice 6 · Chapter 11</p><h2>P6: frequencies a 2, b 3, c 7, d 8, e 10</h2></header>
+<p>(a) Run Huffman’s algorithm: list each merge. [5] (b) Give a codeword length for each letter and the total cost in bits. [4] (c) How many bits would a fixed-length code need? [2] (d) Complete: in each of the (i) iterations, extract the two smallest x and y and insert z with z.freq = (ii). Tight running time with a binary heap? [4]</p>
+<details class="ans sol"><summary>Show the worked solution (checked by running Huffman)</summary><div class="in">
+<p>(a) a + b = 5; 5 + c = 12; d + e = 18; 12 + 18 = 30 (root).</p>
+<p>(b) Lengths: a 3, b 3, c 2, d 2, e 2. Cost = 2·3 + 3·3 + 7·2 + 8·2 + 10·2 = <b>65 bits</b>. Check: the cost also equals the sum of the internal node weights, 5 + 12 + 18 + 30 = 65 ✓ (a quick way to catch arithmetic slips).</p>
+<p>(c) 5 letters need 3 bits each: 30 × 3 = <b>90 bits</b>.</p>
+<p>(d) (i) <i>n</i> − 1; (ii) <code>x.freq + y.freq</code>. Θ(<i>n</i> log <i>n</i>): BuildHeap Θ(<i>n</i>), then <i>n</i> − 1 rounds of a constant number of Θ(log <i>n</i>) heap operations.</p></div></details>
+</section>
+
+<section class="part" id="fx-7" data-toc="All tight bounds on one page" data-sub="time and auxiliary space"><header class="ch-h"><p class="eyebrow">Part 8 · Reference</p><h2>Tight bounds, with auxiliary space</h2></header>
+<p>Auxiliary space follows the quiz convention: input excluded, recursion stack included.</p>
+<div class="scroll"><table class="tbl wrap"><thead><tr><th class="l">Operation</th><th class="l">Time (tight)</th><th class="l">Aux. space</th><th class="l">Remember</th></tr></thead><tbody>
+<tr><td class="l">Binary search (iterative / recursive)</td><td class="l">Θ(log <i>n</i>) worst</td><td class="l">Θ(1) / Θ(log <i>n</i>)</td><td class="l">needs a sorted array</td></tr>
+<tr><td class="l">BFS, DFS (adjacency lists)</td><td class="l">Θ(|<i>V</i>| + |<i>E</i>|)</td><td class="l">Θ(|<i>V</i>|)</td><td class="l">adjacency matrix: Θ(|<i>V</i>|²)</td></tr>
+<tr><td class="l">Hashing with chaining</td><td class="l">Θ(1 + α) average; Θ(<i>n</i>) worst</td><td class="l">Θ(1)</td><td class="l">α = <i>n</i>/<i>m</i></td></tr>
+<tr><td class="l">Open addressing (linear probing)</td><td class="l">Θ(<i>m</i>) worst</td><td class="l">Θ(1)</td><td class="l">DELETED: search goes on, insert may reuse</td></tr>
+<tr><td class="l">BST search / insert / delete</td><td class="l">Θ(<i>h</i>); Θ(<i>n</i>) worst shape</td><td class="l">Θ(1) iterative, Θ(<i>h</i>) recursive</td><td class="l"><i>h</i> = <i>n</i> − 1 for a chain</td></tr>
+<tr><td class="l">AVL search / insert / delete</td><td class="l">Θ(log <i>n</i>)</td><td class="l">Θ(log <i>n</i>) if recursive</td><td class="l">insert: ≤ 1 (double) rotation; delete: maybe one per level</td></tr>
+<tr><td class="l">Bubble / selection / insertion sort</td><td class="l">Θ(<i>n</i>²) worst; insertion Θ(<i>n</i>) best</td><td class="l">Θ(1)</td><td class="l">insertion sort = Θ(<i>n</i> + inversions)</td></tr>
+<tr><td class="l">Heapify / BuildHeap / HeapSort</td><td class="l">Θ(log <i>n</i>) / Θ(<i>n</i>) / Θ(<i>n</i> log <i>n</i>)</td><td class="l">Θ(1) (loop version)</td><td class="l">not stable</td></tr>
+<tr><td class="l">Merge sort</td><td class="l">Θ(<i>n</i> log <i>n</i>) always</td><td class="l">Θ(<i>n</i>)</td><td class="l">stable; <i>T</i>(<i>n</i>) = 2<i>T</i>(<i>n</i>/2) + Θ(<i>n</i>)</td></tr>
+<tr><td class="l">Quicksort</td><td class="l">Θ(<i>n</i>²) worst; Θ(<i>n</i> log <i>n</i>) average</td><td class="l">Θ(<i>n</i>) worst stack</td><td class="l">sorted input with pivot A[p] is the worst case</td></tr>
+<tr><td class="l">Any comparison sort</td><td class="l">Ω(<i>n</i> log <i>n</i>) worst</td><td class="l">n/a</td><td class="l">decision tree has ≥ <i>n</i>! leaves: height ≥ log(<i>n</i>!) = Θ(<i>n</i> log <i>n</i>)</td></tr>
+<tr><td class="l">Counting sort / radix sort (<i>d</i> digits)</td><td class="l">Θ(<i>n</i> + <i>k</i>) / Θ(<i>d</i>(<i>n</i> + <i>k</i>))</td><td class="l">Θ(<i>n</i> + <i>k</i>)</td><td class="l">stable passes are essential for radix</td></tr>
+<tr><td class="l">Huffman with a heap</td><td class="l">Θ(<i>n</i> log <i>n</i>)</td><td class="l">Θ(<i>n</i>)</td><td class="l">cost = sum of internal node weights</td></tr>
+<tr><td class="l">Linked-list one pass (e.g. quiz Split)</td><td class="l">Θ(<i>n</i>)</td><td class="l">Θ(1)</td><td class="l">save next before you overwrite it</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="part" id="fx-8" data-toc="Exam-room checklist" data-sub="the marks people throw away"><header class="ch-h"><p class="eyebrow">Part 9 · Checklist</p><h2>In the exam room</h2></header>
+<ul>
+<li>Read the conventions box first. Logs base 2; Θ for tight bounds; aux space includes the recursion stack.</li>
+<li>For each blank, write the invariant in words in the margin, then the expression. Check the blank on an empty input and on one element.</li>
+<li>Never add statements, variables or side effects to a code completion.</li>
+<li>For a trace, write the state after every step (queue, stack, table, array). Partial work earns partial marks.</li>
+<li>For a closed form, check it against the small cases you traced.</li>
+<li>For induction, label base case, hypothesis and step, and point to where the hypothesis is used.</li>
+<li>For “faulty version” or “does this violate the claim”: answer Yes/No, then run the given input and point at the exact failing step.</li>
+<li>Give bounds in the variables asked (<i>h</i>, <i>m</i>, |<i>V</i>| + |<i>E</i>|), not automatically in <i>n</i>.</li>
+</ul>
+</section>
+
+<footer class="pnav"><a class="pn prev" href="#notes"><span class="d">Previous</span><span class="t">Revision notes</span></a><a class="pn next" href="#hub"><span class="d">Next</span><span class="t">Home: all chapters</span></a></footer></main></div></section>
+
+
 
 <footer class="foot">
   <p>Made from the course slides and tutorial sheets for COMP2119 Data Structures &amp; Algorithms. Every number in the demos was checked by running the algorithm. Where a slide has a slip, the guide says so.</p>
@@ -22802,6 +23044,170 @@ The target is ((<i>m</i>+1) + 2)&middot;2<sup>(<i>m</i>+1)&minus;3</sup> = (<i>m
     });
     ['v', 'a', 'b'].forEach(function (k) { var w = o.els[k]; if (w && w.parentNode) { w.parentNode.classList.add('wide'); if (w.parentNode.parentNode) w.parentNode.parentNode.classList.add('wide'); } });
     api = DS.makeStepper(root, { frames: frames(), render: render, speed: function () { return 1400; } });
+  };
+})();
+
+
+/* ===== Added: quiz demos (Score, Split, BFS/stack, linear probing, TreeRank) ===== */
+(function () {
+  'use strict';
+  var DS = window.DS, esc = DS.esc || function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  function q(root, k) { return root.querySelector('[data-k="' + k + '"]'); }
+  function chips(arr, cls) { return arr.length ? arr.map(function (x) { return '<span class="qz-chip ' + (cls || '') + '">' + esc(x) + '</span>'; }).join('') : '<span class="mu">empty</span>'; }
+
+  /* Q1: Score vs FastScore */
+  DS.DEMOS.qzscore = function (root) {
+    var inp = q(root, 'r'), out = root.querySelector('[data-o="rv"]'), stage = root.querySelector('.stage'), cap = root.querySelector('.cap');
+    function draw() {
+      var r = +inp.value, n = Math.pow(2, r);
+      out.textContent = 'r = ' + r + ', n = ' + n;
+      var rows = '', s = 1, c = 1, fc = 1;
+      for (var k = 0; k <= r; k++) {
+        var m = Math.pow(2, k);
+        if (k > 0) { s = 2 * s + m; c = 2 * c + 1; fc = fc + 1; }
+        rows += '<tr' + (k === r ? ' class="qz-cur"' : '') + '><td>' + k + '</td><td>' + m + '</td><td>' + s + '</td><td>' + (m * (1 + k)) + '</td><td>' + c + '</td><td>' + (2 * m - 1) + '</td><td>' + fc + '</td></tr>';
+      }
+      stage.innerHTML = '<div class="scroll"><table class="tbl"><thead><tr><th>r</th><th>n</th><th>Score(n)</th><th>2<sup>r</sup>(1+r)</th><th>calls C(n)</th><th>2n − 1</th><th>FastScore calls</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      cap.innerHTML = 'Score makes <b>' + (2 * n - 1) + '</b> calls on n = ' + n + ' (Θ(n) time); FastScore makes only <b>' + (r + 1) + '</b> = log n + 1 (Θ(log n) time). Both recurse ' + r + ' levels deep, so both use Θ(log n) stack space.';
+    }
+    inp.addEventListener('input', draw); draw();
+    var ctl = root.querySelector('.ctl'); if (ctl) ctl.remove();
+  };
+
+  /* Q2: Split */
+  DS.DEMOS.qzsplit = function (root) {
+    var L = [['A', false], ['B', true], ['C', true], ['D', false], ['E', true]];
+    var sel = q(root, 'v'), api;
+    function frames() {
+      var fr = [], U = [], O = [], i = 0, bad = sel.value === 'bad';
+      fr.push({ p: 0, U: [], O: [], rest: L.map(function (x) { return x[0]; }), msg: 'Start: both output lists empty, p = head = A.' });
+      while (i !== null && i < L.length) {
+        var nd = L[i], nextNode;
+        if (bad) { nextNode = null; } else { nextNode = i + 1 < L.length ? i + 1 : null; }
+        (nd[1] ? U : O).push(nd[0]);
+        var rest = nextNode === null ? [] : L.slice(nextNode).map(function (x) { return x[0]; });
+        var msg = bad
+          ? '<code>p.next = null</code> first, so <code>nextNode = p.next</code> reads <b>null</b>. ' + nd[0] + ' goes to the ' + (nd[1] ? 'urgent' : 'ordinary') + ' list, then p = null and the loop stops after <b>1 iteration</b>: B, C, D, E are lost.'
+          : 'nextNode = ' + (nextNode === null ? 'null' : L[nextNode][0]) + ' (saved first), cut ' + nd[0] + '.next, append ' + nd[0] + ' to the ' + (nd[1] ? '<b>urgent</b>' : '<b>ordinary</b>') + ' list (' + (nd[1] ? U : O).length + (((nd[1] ? U : O).length === 1) ? ' node: it becomes the head' : ' nodes: tail.next = ' + nd[0]) + ').';
+        fr.push({ p: nextNode, U: U.slice(), O: O.slice(), rest: rest, msg: msg });
+        i = nextNode;
+      }
+      if (!bad) fr.push({ p: null, U: U.slice(), O: O.slice(), rest: [], msg: 'p = null: done. Urgent <b>B → C → E</b>, ordinary <b>A → D</b>, order kept, no new nodes.' });
+      return fr;
+    }
+    function render(f, stage, cap) {
+      stage.innerHTML = '<div class="qz-rows"><div><b>still to read</b> ' + chips(f.rest) + '</div><div><b>urgent</b> ' + chips(f.U, 'hot') + '</div><div><b>ordinary</b> ' + chips(f.O, 'call') + '</div></div>';
+      cap.innerHTML = f.msg;
+    }
+    sel.addEventListener('change', function () { api.set(frames(), false); });
+    api = DS.makeStepper(root, { frames: frames(), render: render });
+  };
+
+  /* Q3: BFS with a queue vs the same loop with a stack */
+  var GQ = { W: 420, H: 240, r: 17, nodes: [
+    { id: 'A', x: 200, y: 24 }, { id: 'B', x: 70, y: 120 }, { id: 'D', x: 330, y: 120 }, { id: 'C', x: 200, y: 92 },
+    { id: 'F', x: 200, y: 150 }, { id: 'E', x: 200, y: 212 }, { id: 'G', x: 380, y: 212 }],
+    edges: [{ a: 'A', b: 'B' }, { a: 'A', b: 'D' }, { a: 'B', b: 'C' }, { a: 'B', b: 'E' }, { a: 'C', b: 'D' }, { a: 'C', b: 'F' }, { a: 'D', b: 'E' }, { a: 'E', b: 'F' }] };
+  var ADJ = { A: 'BD', B: 'ACE', C: 'BDF', D: 'ACE', E: 'BDF', F: 'CE', G: '' };
+  DS.DEMOS.qzgraph = function (root) {
+    var sel = q(root, 'm'), api;
+    function frames() {
+      var stack = sel.value === 's', vis = { A: 1 }, box = ['A'], out = [], fr = [];
+      fr.push({ box: box.slice(), out: [], cur: null, vis: Object.assign({}, vis), msg: 'Mark A and put it in the ' + (stack ? 'stack' : 'queue') + '.' });
+      while (box.length) {
+        var u = stack ? box.pop() : box.shift(); out.push(u);
+        var added = [];
+        ADJ[u].split('').forEach(function (w) { if (!vis[w]) { vis[w] = 1; box.push(w); added.push(w); } });
+        fr.push({ box: box.slice(), out: out.slice(), cur: u, vis: Object.assign({}, vis), msg: (stack ? 'Pop ' : 'Remove ') + '<b>' + u + '</b>; neighbours ' + ADJ[u].split('').join(', ') + (added.length ? ': new ones ' + added.join(', ') + ' are marked and ' + (stack ? 'pushed' : 'enqueued') : ': all already marked') + '.' + (!stack && u === 'D' ? ' <b>Part (a)(ii): the queue is now [C, E].</b>' : '') + (stack && out.length === 3 ? ' <b>Part (c): third pop is E (distance 2) while B (distance 1) is still in the stack.</b>' : '') });
+      }
+      fr.push({ box: [], out: out.slice(), cur: null, vis: vis, msg: 'Empty: order <b>' + out.join(', ') + '</b>. G was never reached; the outer loop over all vertices (part b) would start BFSFrom(G).' });
+      return fr;
+    }
+    function render(f, stage, cap) {
+      var st = { n: {} };
+      Object.keys(f.vis).forEach(function (k) { st.n[k] = 'q'; });
+      f.out.forEach(function (k) { st.n[k] = 'vis'; });
+      if (f.cur) st.n[f.cur] = 'cur';
+      stage.innerHTML = DS.graphSVG(GQ, st, 'The quiz graph: A to F connected, G isolated.') +
+        '<div class="qz-rows"><div><b>' + (sel.value === 's' ? 'stack (bottom → top)' : 'queue (front → back)') + '</b> ' + chips(f.box, 'call') + '</div><div><b>removed so far</b> ' + chips(f.out, 'base') + '</div></div>';
+      cap.innerHTML = f.msg;
+    }
+    sel.addEventListener('change', function () { api.set(frames(), false); });
+    api = DS.makeStepper(root, { frames: frames(), render: render });
+  };
+
+  /* Q4: linear probing */
+  var T0 = [30, 10, 'EMPTY', 14, 25, 'EMPTY', 'EMPTY', 'EMPTY', 8, 'DELETED', 19];
+  DS.DEMOS.qzprobe = function (root) {
+    var sel = q(root, 'op'), api, m = 11;
+    function frames() {
+      var op = sel.value, k = op === 's52' ? 52 : (op === 'ok41' ? 41 : 30), T = T0.slice(), fr = [], fd = null, seen = [];
+      fr.push({ T: T.slice(), seen: [], j: null, msg: 'k = ' + k + ', start at ' + k + ' mod 11 = <b>' + (k % m) + '</b>.' });
+      for (var i = 0; i < m; i++) {
+        var j = (k + i) % m, e = T[j]; seen.push(j);
+        if (e === k) { fr.push({ T: T.slice(), seen: seen.slice(), j: j, msg: 'Slot ' + j + ' holds ' + k + ': ' + (op[0] === 's' ? '<b>present</b>. Slots examined: ' + seen.join(', ') + '.' : 'return <b>PRESENT</b>, table unchanged.') }); return fr; }
+        if (op === 'bad30' && (e === 'EMPTY' || e === 'DELETED')) { T[j] = k; fr.push({ T: T.slice(), seen: seen.slice(), j: j, bad: j, msg: 'Slot ' + j + ' is ' + e + ': the proposal writes 30 here and returns INSERTED. <b>But 30 is already in slot 0</b>: now it is stored twice.' }); return fr; }
+        if (e === 'DELETED') {
+          if (op[0] === 'o' && fd === null) { fd = j; fr.push({ T: T.slice(), seen: seen.slice(), j: j, fd: fd, msg: 'Slot ' + j + ' is DELETED: remember it as <b>firstDeleted = ' + j + '</b>, but keep going (k might be further on).' }); continue; }
+          fr.push({ T: T.slice(), seen: seen.slice(), j: j, fd: fd, msg: 'Slot ' + j + ' is DELETED: search does <b>not</b> stop here.' }); continue;
+        }
+        if (e === 'EMPTY') {
+          if (op[0] === 's') { fr.push({ T: T.slice(), seen: seen.slice(), j: j, msg: 'Slot ' + j + ' is EMPTY: stop, <b>absent</b>. Slots examined: ' + seen.join(', ') + '.' }); return fr; }
+          var w = fd !== null ? fd : j; T[w] = k;
+          fr.push({ T: T.slice(), seen: seen.slice(), j: w, fd: fd, msg: 'Slot ' + j + ' is EMPTY, so ' + k + ' is certainly absent. Write it into ' + (fd !== null ? 'firstDeleted = <b>' + fd + '</b>' : 'this slot') + ', return <b>INSERTED</b>.' }); return fr;
+        }
+        fr.push({ T: T.slice(), seen: seen.slice(), j: j, fd: fd, msg: 'Slot ' + j + ' holds ' + e + ', not ' + k + ': next slot.' });
+      }
+      return fr;
+    }
+    function render(f, stage, cap) {
+      var h = '<div class="scroll"><table class="tbl qz-ht"><thead><tr><th>slot</th>', b = '<tr><th>entry</th>';
+      for (var j = 0; j < m; j++) {
+        h += '<th>' + j + '</th>';
+        var cls = (j === f.j ? 'qz-cur ' : '') + (f.seen.indexOf(j) >= 0 ? 'qz-seen ' : '') + (j === f.bad ? 'qz-bad ' : '') + (j === f.fd ? 'qz-fd' : '');
+        var v = f.T[j]; b += '<td class="' + cls + '">' + (v === 'EMPTY' ? '<span class="mu">E</span>' : v === 'DELETED' ? '<span class="mu">DEL</span>' : v) + '</td>';
+      }
+      stage.innerHTML = h + '</tr></thead><tbody>' + b + '</tr></tbody></table></div>';
+      cap.innerHTML = f.msg;
+    }
+    sel.addEventListener('change', function () { api.set(frames(), false); });
+    api = DS.makeStepper(root, { frames: frames(), render: render });
+  };
+
+  /* Q5: TreeRank with subtree sizes */
+  var TN = { 24: [11, 38], 11: [5, 17], 38: [31, 46], 31: [null, 35], 5: [null, null], 17: [null, null], 46: [null, null], 35: [null, null] };
+  function size(k) { return k === null ? 0 : 1 + size(TN[k][0]) + size(TN[k][1]); }
+  var GT = { W: 420, H: 240, r: 17, nodes: [
+    { id: '24', x: 210, y: 28 }, { id: '11', x: 110, y: 90 }, { id: '38', x: 310, y: 90 }, { id: '5', x: 55, y: 152 }, { id: '17', x: 165, y: 152 },
+    { id: '31', x: 255, y: 152 }, { id: '46', x: 365, y: 152 }, { id: '35', x: 300, y: 212 }],
+    edges: [{ a: '24', b: '11' }, { a: '24', b: '38' }, { a: '11', b: '5' }, { a: '11', b: '17' }, { a: '38', b: '31' }, { a: '38', b: '46' }, { a: '31', b: '35' }] };
+  DS.DEMOS.qzrank = function (root) {
+    var sel = q(root, 'x'), api;
+    function frames() {
+      var x = +sel.value, u = 24, acc = 0, fr = [], path = [], counted = [];
+      fr.push({ u: null, path: [], counted: [], msg: 'TreeRank(root = 24, x = ' + x + '). Running total = 0.' });
+      while (u !== null) {
+        path.push(u);
+        if (x <= u) { fr.push({ u: u, path: path.slice(), counted: counted.slice(), msg: x + ' ≤ ' + u + ': ' + u + ' and its right subtree add nothing. Go <b>left</b>. Total still ' + acc + '.' }); u = TN[u][0]; }
+        else {
+          var s = size(TN[u][0]); acc += s + 1; counted.push(u); (function mark(k) { if (k === null) return; counted.push(k); mark(TN[k][0]); mark(TN[k][1]); })(TN[u][0]);
+          fr.push({ u: u, path: path.slice(), counted: counted.slice(), msg: x + ' &gt; ' + u + ': add Size(left) + 1 = ' + s + ' + 1. Total = <b>' + acc + '</b>. Go <b>right</b>.' }); u = TN[u][1];
+        }
+      }
+      fr.push({ u: null, path: path, counted: counted, msg: 'Reached null: R(' + x + ') = <b>' + acc + '</b>, after visiting ' + path.length + ' nodes (one root-to-leaf path: Θ(h)).' });
+      return fr;
+    }
+    function render(f, stage, cap) {
+      var st = { n: {}, below: {} };
+      Object.keys(TN).forEach(function (k) { st.below[k] = 'size ' + size(+k); });
+      f.counted.forEach(function (k) { st.n[k] = 'vis'; });
+      f.path.forEach(function (k) { if (!st.n[k]) st.n[k] = 'q'; });
+      if (f.u !== null) st.n[f.u] = 'cur';
+      stage.innerHTML = DS.graphSVG(GT, st, 'The BST of quiz Q5 with subtree sizes.') + '<p class="mu qz-key"><span class="qz-chip base">counted</span> <span class="qz-chip call">on the path</span> <span class="qz-chip hot">current</span></p>';
+      cap.innerHTML = f.msg;
+    }
+    sel.addEventListener('change', function () { api.set(frames(), false); });
+    api = DS.makeStepper(root, { frames: frames(), render: render });
   };
 })();
 

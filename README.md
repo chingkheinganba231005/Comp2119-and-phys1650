@@ -4,7 +4,7 @@ Two interactive study guides in one static website, ready for GitHub Pages. Ther
 
 ```
 index.html            Front page with a card for each course
-comp2119/index.html   COMP2119 "Data Structures from Scratch" (complete app, unchanged)
+comp2119/index.html   COMP2119 "Data Structures from Scratch" (complete app; quiz + final-exam pages added Nov 2026)
 phys1650/index.html   PHYS1650 "Nature of the Universe" (complete app; Test 2 prep upgraded Nov 2026)
 .nojekyll             Tells GitHub Pages to serve the files as they are
 ```
